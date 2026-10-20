@@ -42,10 +42,6 @@ Le backend et ses tests sont développés en priorité, puis chaque fonctionnali
 
 ## Préparation des versions
 
-**R1 — état publié.** Le [premier commit R1 `3f51020`](https://github.com/salahbekkaripro/MINDCRIME/commit/3f510204be40aec7ed44b90e1880e4603c6a38c2) est publié sur GitHub et identifié par le tag `v0.0.1`. Le compte administrateur est `salahbekkaripro`, le collaborateur actif `yaciiine78` et les invitations restantes concernent `boughbough`, `mbenzidane17` et `mhtthiam11` lors de la vérification du 20 octobre 2026. Chaque destinataire doit accepter sa propre invitation. Les comptes et l’identité de commit devront correspondre à ceux réellement utilisés par chacun.
-
-L’URL à déposer doit correspondre au **commit exact retenu** : utiliser le lien ci-dessus pour le premier état, ou le commit des corrections si celles-ci sont intégrées et retenues. Ne pas déplacer le tag initial ni réécrire son commit. Le dossier actualisé ne prétend pas que ses corrections figurent déjà dans le premier commit.
-
 **v0.1.0.** Construire le backend et les tests en priorité, intégrer les cinq features A sur les quatre couches et démontrer les deux modes. Prévoir CI, mesures de couverture et qualité, README et badges fondés sur des résultats réels, dossier actualisé et déclaration de l’usage réel de l’IA. Publier la page de projet ; faire construire la documentation par la CI et la joindre à la release. Les objectifs et le bilan documentaire de R1 ne remplacent pas le bilan réel du développement livré.
 
 **v0.2.0.** Ajouter les cinq features B, réaliser la conteneurisation, vérifier l’ensemble en environnement reproductible, actualiser le dossier, la page et le bilan IA. Le point du 1er décembre prépare cette intégration.
