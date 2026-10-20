@@ -11,7 +11,7 @@ Jeu d’enquête interactif à moteur algorithmique Java. À R1, seule la docume
 | ID | Étudiant | Compte GitHub | Responsabilité principale |
 | --- | --- | --- | --- |
 | D1 | Mohamed BOUGHMADI | https://github.com/MohamedBoughmadi | Génération automatique des enquêtes |
-| D2 | Yacine FERDJALLAH | https://github.com/yaciiine78 | Moteur logique et contradictions |
+| D2 | Yacine FERDJALLAH | https://github.com/yaciiine78 | Cohérence logique des témoignages et détection des contradictions |
 | D3 | Melissa BENZIDANE | https://github.com/mbenzidane17 | Chronologies et déplacements |
 | D4 | Mohamet THIAM | https://github.com/mhtthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |
 | D5 | Salah-Eddine BEKKARI | https://github.com/salahbekkaripro | Moteur de déduction et explications |
@@ -45,8 +45,8 @@ Le socle partagé réunira contraintes logiques, cohérence temporelle, déplace
 ## Six scénarios rattachés aux features prévues
 
 - **S1 — Enquêteur / D1-A.** En tant que joueur, je lance une enquête générée et vérifiée, afin de disposer d'une énigme à solution unique. Le moteur construit les données, l'API restitue l'enquête et le front affiche les indices accessibles.
-- **S2 — Alibi / D2-A.** En tant que suspect, je soumets un témoignage, afin que sa compatibilité avec les déclarations connues soit évaluée. Les déclarations et contradictions seront enregistrées et consultables par l'API et l'écran de partie.
-- **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je vérifie un déplacement entre deux événements dans un réseau connu : le moteur compare le trajet minimal au temps disponible. Il indique si l'alibi est incompatible, compatible avec les contraintes connues — sans être prouvé — ou non vérifiable faute de données. Le résultat et le trajet seront visibles dans la chronologie.
+- **S2 — Alibi / D2-A.** En tant que suspect, j'indique dans mon témoignage où je me trouvais et à quelle heure, afin que le moteur le compare aux déclarations connues. Si deux témoignages placent un même suspect dans la cuisine et dans le jardin à 20 h, une contradiction sera signalée. Cela ne suffira pas à savoir qui ment. Les témoignages et les contradictions seront enregistrés et consultables dans l'interface via l'API.
+- **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je confronte un alibi aux lieux et horaires, afin d'identifier un trajet impossible. Le calcul sera exposé et visualisé dans la chronologie.
 - **S4 — Enquêteur / D4-A.** En tant que joueur, j'interroge un suspect, afin d'obtenir des réponses cohérentes avec ce qu'il sait ou prétend savoir. Le coupable ment sans contredire ses déclarations passées ni les preuves déjà révélées. L'échange est persisté et affiché.
 - **S5 — Deux modes / D5-A.** En tant que joueur, je consulte les hypothèses et leurs motifs d'élimination, afin de comprendre une déduction fondée sur les indices. Les résultats seront persistés, exposés par l'API et présentés dans l'interface.
 - **S6 — Alibi / D4-B.** En tant que suspect, je réponds à un détective qui choisit ses questions en anticipant mes réponses possibles, afin de défendre mon témoignage face à une stratégie d'interrogatoire calculée.

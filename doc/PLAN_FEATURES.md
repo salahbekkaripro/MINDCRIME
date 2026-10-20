@@ -33,3 +33,15 @@ Avec une liste d'adjacence et une file de priorité binaire, Dijkstra est en O((
 Le coût de difficulté de D1-B doit être défini : un simple budget d'indices n'est pas une mesure démontrée de difficulté cognitive. D1-C devra préciser les contraintes de connexité et de distance, leur satisfaction et leur compatibilité avec les trajets de D3. D2-B garantit un noyau minimal par inclusion, pas nécessairement de cardinalité minimale. D5-B devra expliciter la pondération des hypothèses ; D5-C ne promet pas un minimum exact et devra annoncer sa garantie approchée.
 
 Avant toute implémentation, une fiche par feature devra justifier l'algorithme non trivial, la complexité en temps et mémoire, les alternatives, les invariants, les cas limites, les impacts des quatre couches et les critères testables. Un seul responsable portera chaque feature ; les revues et l'intégration resteront collectives. Les commandes applicatives et résultats de tests ne seront ajoutés qu'après implémentation et exécution réelle.
+
+## D2-A — Fonctionnement prévu (Yacine FERDJALLAH)
+
+Pour la première version, le joueur remplira un formulaire avec le suspect concerné, le lieu, l'heure et une déclaration de présence ou d'absence. Le module comparera les témoignages connus : un suspect ne peut pas être dans deux lieux différents au même instant, ni être déclaré présent et absent au même endroit à la même heure. Les déclarations qui se contredisent seront affichées ensemble, sans conclure directement qui ment. Une information manquante ne sera pas considérée comme une contradiction.
+
+Trois exemples à tester lors du développement :
+
+- **Témoignages compatibles** : A est dans la cuisine à 20 h et absent du jardin à 20 h. Ces deux déclarations ne se contredisent pas.
+- **Témoignages contradictoires** : A est dans la cuisine à 20 h selon un témoignage et dans le jardin à 20 h selon un autre. Le module devra signaler la contradiction.
+- **Informations insuffisantes** : aucun témoignage ne précise où se trouvait A à 20 h. Le module ne devra pas déduire une contradiction de ce manque d'information.
+
+Ces exemples serviront à préparer les tests. Le choix précis de l'algorithme de contraintes sera détaillé pour R2.
