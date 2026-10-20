@@ -1,0 +1,89 @@
+{
+  "titre": "Assistance IA — objectifs et bilan documentaire R1",
+  "statut": "Objectifs prévisionnels et estimations de l’usage constaté dans cette conversation",
+  "perimetre": "Bilan limité à la documentation R1 et à son générateur PDF. Aucun code applicatif, algorithme métier, workflow ou suite de tests applicatifs. Les objectifs concernent le fonctionnement prévu pour le développement futur.",
+  "axes": [
+    {
+      "nom": "Code",
+      "niveau": "bas",
+      "ia": 100,
+      "plafond": 70,
+      "objectif": 60,
+      "justification": "Le générateur PDF et ses adaptations ont été écrits par Codex ; les exigences et demandes de modification viennent de l’équipe. Aucun backend créé."
+    },
+    {
+      "nom": "Tests",
+      "niveau": "bas",
+      "ia": null,
+      "plafond": 60,
+      "objectif": 50,
+      "justification": "Aucune suite de tests applicatifs produite ; les contrôles documentaires sont comptés dans Validation."
+    },
+    {
+      "nom": "CI/CD",
+      "niveau": "bas",
+      "ia": null,
+      "plafond": 80,
+      "objectif": 60,
+      "justification": "Aucun workflow implémenté. Le Makefile local appartient à l’outillage documentaire, pas à une CI opérationnelle."
+    },
+    {
+      "nom": "Rédaction",
+      "niveau": "bas",
+      "ia": 90,
+      "plafond": 70,
+      "objectif": 60,
+      "justification": "L’équipe fournit concept, informations, consignes et corrections ; Codex rédige et reformule l’essentiel des fichiers. Estimation de production textuelle, pas d’origine des idées."
+    },
+    {
+      "nom": "Débogage",
+      "niveau": "bas",
+      "ia": null,
+      "plafond": 70,
+      "objectif": 50,
+      "justification": "Aucune activité de débogage applicatif ; les ajustements du générateur sont inclus dans Code et les contrôles dans Validation."
+    },
+    {
+      "nom": "Validation",
+      "niveau": "haut",
+      "ia": 70,
+      "plafond": 20,
+      "objectif": 10,
+      "justification": "L’agent exécute les contrôles de liens, pagination et mise en page ; les retours humains corrigent contenu et organisation. Estimation des vérifications documentaires, pas d’une approbation pédagogique."
+    },
+    {
+      "nom": "Algorithmique",
+      "niveau": "haut",
+      "ia": null,
+      "plafond": 30,
+      "objectif": 20,
+      "justification": "Des familles d’algorithmes sont discutées mais aucun algorithme métier n’est implémenté ; ces échanges relèvent de la conception."
+    },
+    {
+      "nom": "Spécification",
+      "niveau": "haut",
+      "ia": 50,
+      "plafond": 40,
+      "objectif": 20,
+      "justification": "L’équipe et le cours fournissent les exigences ; l’agent formalise critères, impacts, scénarios et propositions de fonctionnalités. Estimation qualitative."
+    },
+    {
+      "nom": "Conception",
+      "niveau": "haut",
+      "ia": 70,
+      "plafond": 30,
+      "objectif": 20,
+      "justification": "L’agent propose et structure l’architecture et les modules à partir des orientations et corrections humaines. Estimation qualitative."
+    },
+    {
+      "nom": "Idéation",
+      "niveau": "haut",
+      "ia": 20,
+      "plafond": 30,
+      "objectif": 10,
+      "justification": "Le concept, les deux modes et la répartition initiale viennent de l’équipe ; l’agent propose des capacités supplémentaires pour les versions futures. Estimation qualitative."
+    }
+  ],
+  "mode": "bilan",
+  "methode": "Estimations de Codex fondées sur les apports visibles dans cette conversation ; pas de mesure exhaustive ni de comptage Git. 100 % Code concerne la saisie du générateur, pas l’origine humaine des besoins. Les axes sans activité applicable restent null et ne sont jamais représentés à 0 %."
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="511.27559055118115" height="264" preserveAspectRatio="xMinYMin meet" viewBox="0 0 511 264" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="511.27559055118115" height="264"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-264)" style="clip-path: url(#clip)">
+		<g transform="">
+			<text x="59.01142693467028" y="253" style="font-family: Body-Bold; font-size: 7.7px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,506) scale(1,-1)">OBJECTIFS DE DÉVELOPPEMENT</text>
+			<text x="108.39389763779529" y="241" style="font-family: Body; font-size: 6.4px;fill: rgb(45%,51%,59%); stroke:none;" transform="translate(0,482) scale(1,-1)">Prévisionnel</text>
+			<polygon points="127.8189 187, 134.8723 184.7082, 139.2316 178.7082, 139.2316 171.2918, 134.8723 165.2918, 127.8189 163, 120.7655 165.2918, 116.4062 171.2918, 116.4062 178.7082, 120.7655 184.7082" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<polygon points="127.8189 199, 141.9257 194.4164, 150.6443 182.4164, 150.6443 167.5836, 141.9257 155.5836, 127.8189 151, 113.7121 155.5836, 104.9935 167.5836, 104.9935 182.4164, 113.7121 194.4164" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<polygon points="127.8189 211, 148.9792 204.1246, 162.0569 186.1246, 162.0569 163.8754, 148.9792 145.8754, 127.8189 139, 106.6586 145.8754, 93.58086 163.8754, 93.58086 186.1246, 106.6586 204.1246" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<polygon points="127.8189 223, 156.0326 213.8328, 173.4696 189.8328, 173.4696 160.1672, 156.0326 136.1672, 127.8189 127, 99.60521 136.1672, 82.16818 160.1672, 82.16818 189.8328, 99.60521 213.8328" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<path d="M 127.818898,175 L 127.818898,223 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="120.39472771592028" y="234.44" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,468) scale(1,-1)">Code</text>
+			<path d="M 127.818898,175 L 156.03259,213.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="163.93242353864483" y="222.70600413439678" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,445) scale(1,-1)">Tests</text>
+			<path d="M 127.818898,175 L 173.46961,189.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="186.25180999896952" y="191.98600413439678" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,383) scale(1,-1)">CI/CD</text>
+			<path d="M 127.818898,175 L 173.46961,160.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="186.25180999896952" y="154.01399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,308) scale(1,-1)">Rédaction</text>
+			<path d="M 127.818898,175 L 156.03259,136.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="163.93242353864483" y="123.29399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,246) scale(1,-1)">Débogage</text>
+			<path d="M 127.818898,175 L 127.818898,127 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="113.2735851377953" y="111.56" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,223) scale(1,-1)">Validation</text>
+			<path d="M 127.818898,175 L 99.605206,136.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="50.762695955695754" y="123.29399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,246) scale(1,-1)">Algorithmique</text>
+			<path d="M 127.818898,175 L 82.168185,160.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="32.14760637037106" y="154.01399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,308) scale(1,-1)">Spécification</text>
+			<path d="M 127.818898,175 L 82.168185,189.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="36.56274308912106" y="191.98600413439675" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,383) scale(1,-1)">Conception</text>
+			<path d="M 127.818898,175 L 99.605206,213.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="68.08056704944573" y="222.70600413439678" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,445) scale(1,-1)">Idéation</text>
+			<polygon points="127.8189 203.8, 141.9257 194.4164, 155.2093 183.8997, 155.2093 166.1003, 141.9257 155.5836, 127.8189 170.2, 122.1762 167.2334, 118.6888 172.0334, 118.6888 177.9666, 124.9975 178.8833" style="stroke: rgb(47%,32%,64%); stroke-linecap: butt; stroke-width: 0.8; fill: rgb(90%,87%,94%); fill-rule: evenodd;"/>
+			<polygon points="127.8189 208.6, 144.7471 198.2997, 164.3395 186.8663, 159.7744 164.617, 147.5685 147.817, 127.8189 165.4, 119.3548 163.3502, 109.5586 169.0669, 114.1237 179.4498, 119.3548 186.6498" style="stroke: rgb(15%,47%,32%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd; stroke-dasharray: 3, 2;"/>
+			<text x="68.87944451279529" y="99" style="font-family: Body; font-size: 6px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,198) scale(1,-1)">Violet : objectif · Vert pointillé : plafond</text>
+			<text x="325.7273716243233" y="253" style="font-family: Body-Bold; font-size: 7.7px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,506) scale(1,-1)">USAGE DOCUMENTAIRE R1</text>
+			<text x="337.6457554133858" y="241" style="font-family: Body; font-size: 6.4px;fill: rgb(45%,51%,59%); stroke:none;" transform="translate(0,482) scale(1,-1)">Estimations de cette session</text>
+			<polygon points="383.4567 187, 390.5101 184.7082, 394.8694 178.7082, 394.8694 171.2918, 390.5101 165.2918, 383.4567 163, 376.4033 165.2918, 372.044 171.2918, 372.044 178.7082, 376.4033 184.7082" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<polygon points="383.4567 199, 397.5635 194.4164, 406.282 182.4164, 406.282 167.5836, 397.5635 155.5836, 383.4567 151, 369.3498 155.5836, 360.6313 167.5836, 360.6313 182.4164, 369.3498 194.4164" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<polygon points="383.4567 211, 404.617 204.1246, 417.6947 186.1246, 417.6947 163.8754, 404.617 145.8754, 383.4567 139, 362.2964 145.8754, 349.2187 163.8754, 349.2187 186.1246, 362.2964 204.1246" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<polygon points="383.4567 223, 411.6704 213.8328, 429.1074 189.8328, 429.1074 160.1672, 411.6704 136.1672, 383.4567 127, 355.243 136.1672, 337.806 160.1672, 337.806 189.8328, 355.243 213.8328" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.8; fill: none; fill-rule: evenodd;"/>
+			<path d="M 383.456693,175 L 383.456693,223 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="376.03252299151086" y="234.44" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,468) scale(1,-1)">Code</text>
+			<path d="M 383.456693,175 L 411.670385,213.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="419.5702188142354" y="222.70600413439678" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,445) scale(1,-1)">Tests</text>
+			<path d="M 383.456693,175 L 429.107406,189.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="441.88960527456004" y="191.98600413439678" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,383) scale(1,-1)">CI/CD</text>
+			<path d="M 383.456693,175 L 429.107406,160.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="441.88960527456004" y="154.01399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,308) scale(1,-1)">Rédaction</text>
+			<path d="M 383.456693,175 L 411.670385,136.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="419.5702188142354" y="123.29399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,246) scale(1,-1)">Débogage</text>
+			<path d="M 383.456693,175 L 383.456693,127 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="368.9113804133858" y="111.56" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,223) scale(1,-1)">Validation</text>
+			<path d="M 383.456693,175 L 355.243001,136.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="306.4004912312863" y="123.29399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,246) scale(1,-1)">Algorithmique</text>
+			<path d="M 383.456693,175 L 337.80598,160.167184 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="287.78540164596166" y="154.01399586560322" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,308) scale(1,-1)">Spécification</text>
+			<path d="M 383.456693,175 L 337.80598,189.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="292.2005383647116" y="191.98600413439675" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,383) scale(1,-1)">Conception</text>
+			<path d="M 383.456693,175 L 355.243001,213.832816 Z" style="stroke: rgb(82%,85%,88%); stroke-linecap: butt; stroke-width: 0.4;"/>
+			<text x="323.7183623250363" y="222.70600413439678" style="font-family: Body; font-size: 5.8px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,445) scale(1,-1)">Idéation</text>
+			<path d="M 383.456693,175 L 383.456693,223 Z" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<circle cx="383.45669291338584" cy="223.0" r="2" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,35%,9%); fill-rule: evenodd;"/>
+			<path d="M 383.456693,175 L 424.542334,161.650466 Z" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<circle cx="424.54233441733646" cy="161.65046584300228" r="2" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,35%,9%); fill-rule: evenodd;"/>
+			<path d="M 383.456693,175 L 383.456693,141.4 Z" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<circle cx="383.45669291338584" cy="141.4" r="2" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,35%,9%); fill-rule: evenodd;"/>
+			<path d="M 383.456693,175 L 360.631337,167.583592 Z" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<circle cx="360.63133652230215" cy="167.58359213500125" r="2" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,35%,9%); fill-rule: evenodd;"/>
+			<path d="M 383.456693,175 L 351.501194,185.382971 Z" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<circle cx="351.50119396586865" cy="185.38297101099823" r="2" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,35%,9%); fill-rule: evenodd;"/>
+			<path d="M 383.456693,175 L 377.813954,182.766563 Z" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1.4;"/>
+			<circle cx="377.81395449137807" cy="182.7665631459995" r="2" style="stroke: rgb(69%,35%,9%); stroke-linecap: butt; stroke-width: 1; fill: rgb(69%,35%,9%); fill-rule: evenodd;"/>
+			<text x="323.75991556963584" y="99" style="font-family: Body; font-size: 6px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,198) scale(1,-1)">Orange : part estimée · N/A : sans point</text>
+			<path d="M 255.637795,95 L 255.637795,259 Z" style="stroke: rgb(85%,89%,92%); stroke-linecap: butt; stroke-width: 0.5;"/>
+			<text x="5.0" y="81" style="font-family: Body-Bold; font-size: 6.3px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,162) scale(1,-1)">Compétence</text>
+			<text x="158.0" y="81" style="font-family: Body-Bold; font-size: 6.3px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,162) scale(1,-1)">Objectif</text>
+			<text x="202.2704833984375" y="81" style="font-family: Body-Bold; font-size: 6.3px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,162) scale(1,-1)">R1 estimé</text>
+			<rect x="0.0" y="63" width="252.63779527559058" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="5.0" y="66" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,132) scale(1,-1)">Code</text>
+			<text x="163.8703125" y="66" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,132) scale(1,-1)">60 %</text>
+			<text x="209.834375" y="66" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,132) scale(1,-1)">100 %</text>
+			<text x="5.0" y="53" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,106) scale(1,-1)">Tests</text>
+			<text x="163.8703125" y="53" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,106) scale(1,-1)">50 %</text>
+			<text x="214.3390625" y="53" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,106) scale(1,-1)">N/A</text>
+			<rect x="0.0" y="37" width="252.63779527559058" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="5.0" y="40" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,80) scale(1,-1)">CI/CD</text>
+			<text x="163.8703125" y="40" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,80) scale(1,-1)">60 %</text>
+			<text x="214.3390625" y="40" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,80) scale(1,-1)">N/A</text>
+			<text x="5.0" y="27" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,54) scale(1,-1)">Rédaction</text>
+			<text x="163.8703125" y="27" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,54) scale(1,-1)">60 %</text>
+			<text x="211.8703125" y="27" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,54) scale(1,-1)">90 %</text>
+			<rect x="0.0" y="11" width="252.63779527559058" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="5.0" y="14" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,28) scale(1,-1)">Débogage</text>
+			<text x="163.8703125" y="14" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,28) scale(1,-1)">50 %</text>
+			<text x="214.3390625" y="14" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,28) scale(1,-1)">N/A</text>
+			<text x="260.6377952755906" y="81" style="font-family: Body-Bold; font-size: 6.3px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,162) scale(1,-1)">Compétence</text>
+			<text x="413.6377952755906" y="81" style="font-family: Body-Bold; font-size: 6.3px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,162) scale(1,-1)">Objectif</text>
+			<text x="457.90827867402805" y="81" style="font-family: Body-Bold; font-size: 6.3px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,162) scale(1,-1)">R1 estimé</text>
+			<rect x="255.63779527559058" y="63" width="252.63779527559058" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="260.6377952755906" y="66" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,132) scale(1,-1)">Validation</text>
+			<text x="419.5081077755906" y="66" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,132) scale(1,-1)">10 %</text>
+			<text x="467.5081077755906" y="66" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,132) scale(1,-1)">70 %</text>
+			<text x="260.6377952755906" y="53" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,106) scale(1,-1)">Algorithmique</text>
+			<text x="419.5081077755906" y="53" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,106) scale(1,-1)">20 %</text>
+			<text x="469.9768577755906" y="53" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,106) scale(1,-1)">N/A</text>
+			<rect x="255.63779527559058" y="37" width="252.63779527559058" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="260.6377952755906" y="40" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,80) scale(1,-1)">Spécification</text>
+			<text x="419.5081077755906" y="40" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,80) scale(1,-1)">20 %</text>
+			<text x="467.5081077755906" y="40" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,80) scale(1,-1)">50 %</text>
+			<text x="260.6377952755906" y="27" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,54) scale(1,-1)">Conception</text>
+			<text x="419.5081077755906" y="27" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,54) scale(1,-1)">20 %</text>
+			<text x="467.5081077755906" y="27" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,54) scale(1,-1)">70 %</text>
+			<rect x="255.63779527559058" y="11" width="252.63779527559058" height="12" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(94%,96%,97%); fill-rule: evenodd;"/>
+			<text x="260.6377952755906" y="14" style="font-family: Body; font-size: 6.4px;fill: rgb(14%,21%,29%); stroke:none;" transform="translate(0,28) scale(1,-1)">Idéation</text>
+			<text x="419.5081077755906" y="14" style="font-family: Body; font-size: 6.4px;fill: rgb(47%,32%,64%); stroke:none;" transform="translate(0,28) scale(1,-1)">10 %</text>
+			<text x="467.5081077755906" y="14" style="font-family: Body; font-size: 6.4px;fill: rgb(69%,35%,9%); stroke:none;" transform="translate(0,28) scale(1,-1)">20 %</text>
+			<text x="173.27988511934058" y="1" style="font-family: Body; font-size: 6px;fill: rgb(45%,51%,59%); stroke:none;" transform="translate(0,2) scale(1,-1)">Échelle commune : 0 à 100 % · N/A ne signifie pas 0 %</text>
+		</g>
+	</g>
+</svg>
