@@ -73,6 +73,8 @@ Le graphe représente les appels des cas d’utilisation ; les dépendances de c
 
 La chronologie proposera les contraintes de présence et de déplacement ; le module de contraintes vérifiera la cohérence ; la déduction explorera et expliquera les hypothèses à l’aide de ces résultats. Les détails des contrats Java restent à concevoir. Les cycles entre modules seront évités en faisant coordonner les échanges par les cas d’utilisation et en partageant uniquement des modèles métier et des interfaces explicites.
 
+Pour D2, l'application transmettra des déclarations structurées et des contraintes dont l'utilisation est autorisée dans le contexte de l'analyse. Le résultat distinguera contradiction démontrée, compatibilité établie et indétermination. Il référencera les déclarations concernées sans divulguer d'information cachée. Une propagation sans contradiction détectée ne sera pas présentée, à elle seule, comme une preuve de compatibilité globale. D2 ne calculera pas les trajets de D3 et ne désignera pas le coupable à la place de D5. Ce contrat reste à préciser et à faire relire avant l'implémentation.
+
 ## Répartition des responsabilités
 
 | Responsable | Packages métier principaux | Responsabilité fonctionnelle |

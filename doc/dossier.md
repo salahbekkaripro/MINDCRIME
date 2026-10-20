@@ -11,7 +11,7 @@ Jeu d’enquête interactif à moteur algorithmique Java. À R1, seule la docume
 | ID | Étudiant | Compte GitHub | Responsabilité principale |
 | --- | --- | --- | --- |
 | D1 | Mohamed BOUGHMADI | https://github.com/boughbough | Génération automatique des enquêtes |
-| D2 | Yacine FERDJALLAH | https://github.com/yaciiine78 | Moteur logique et contradictions |
+| D2 | Yacine FERDJALLAH | https://github.com/yaciiine78 | Cohérence logique des témoignages et contradictions |
 | D3 | Melissa BENZIDANE | https://github.com/mbenzidane17 | Chronologies et déplacements |
 | D4 | Mohamet THIAM | https://github.com/mhtthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |
 | D5 | Salah-Eddine BEKKARI | https://github.com/salahbekkaripro | Moteur de déduction et explications |
@@ -45,7 +45,7 @@ Le socle partagé réunira contraintes logiques, cohérence temporelle, déplace
 ## Six scénarios rattachés aux features prévues
 
 - **S1 — Enquêteur / D1-A.** En tant que joueur, je lance une enquête générée et vérifiée, afin de disposer d'une énigme à solution unique. Le moteur construit les données, l'API restitue l'enquête et le front affiche les indices accessibles.
-- **S2 — Alibi / D2-A.** En tant que suspect, je soumets un témoignage, afin que sa compatibilité avec les déclarations connues soit évaluée. Les déclarations et contradictions seront enregistrées et consultables par l'API et l'écran de partie.
+- **S2 — Alibi / D2-A.** En tant que suspect, je déclare une présence ou une absence dans un lieu à un instant donné, afin de confronter mon témoignage aux déclarations révélées. Deux lieux distincts attribués au même suspect au même instant constituent une contradiction. Déclarations et résultats seront enregistrés, exposés par l'API et affichés dans la partie.
 - **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je confronte un alibi aux lieux et horaires, afin d'identifier un trajet impossible. Le calcul sera exposé et visualisé dans la chronologie.
 - **S4 — Enquêteur / D4-A.** En tant que joueur, j'interroge un suspect, afin d'obtenir des réponses cohérentes avec ce qu'il sait ou prétend savoir. Le coupable ment sans contredire ses déclarations passées ni les preuves déjà révélées. L'échange est persisté et affiché.
 - **S5 — Deux modes / D5-A.** En tant que joueur, je consulte les hypothèses et leurs motifs d'élimination, afin de comprendre une déduction fondée sur les indices. Les résultats seront persistés, exposés par l'API et présentés dans l'interface.
@@ -54,6 +54,8 @@ Le socle partagé réunira contraintes logiques, cohérence temporelle, déplace
 ## Critères d'acceptation à détailler dans les fiches
 
 Les tests devront vérifier unicité avec indices accessibles, contradictions connues, conservation des scénarios compatibles, faisabilité des déplacements et transitions d'états. Des cas limites, invariants et propriétés reproductibles seront définis pour chaque algorithme ; les scénarios devront être démontrables de bout en bout.
+
+Pour D2, une information manquante ne sera pas une contradiction. Une incompatibilité signalera des déclarations qui ne peuvent pas toutes être vraies, sans désigner à elle seule le menteur ou le coupable.
 
 Le plan détaillé figure dans doc/PLAN_FEATURES.md. Chaque feature sera portée par une personne et traversera BD, backend, API REST et frontend ; un CRUD ou une optimisation seule ne sera pas comptabilisé comme feature majeure.
 
