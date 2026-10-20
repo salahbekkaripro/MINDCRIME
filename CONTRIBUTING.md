@@ -25,4 +25,8 @@ L'email doit être associé à son compte GitHub. Les identités individuelles n
 
 En fin de séance, prévoir un commit et un tag de pré-livraison tel que `v0.1.0-SNAPSHOT`. Avant une livraison : dossier, araignée et page de projet actualisés, build et tests applicatifs réellement vérifiés, `make -C doc` exécuté. La CI devra ensuite produire la documentation et joindre JAR + PDF à la release ; ces automatismes restent à implémenter. Chaque membre dépose individuellement l’URL du commit exact dans le devoir. R1 : 23 h 59 ; les devoirs R2–R4 affichent 12 h 50, horaire retenu pour organiser le dépôt malgré le planning général à 23 h 59. Étape intermédiaire le 1er décembre 2026, transparents le 18 janvier 2027 à 23 h 59. Voir le [planning des livraisons](doc/RELEASES.md).
 
-Chaque PR devra comporter une section « Usage de l'IA » : outil, demande, éléments repris/modifiés/rejetés, revue humaine, vérifications et part par compétence. Voir [AI_USAGE.md](doc/AI_USAGE.md). Le protocole et les plafonds décrivent l’organisation prévisionnelle. Aucun commit, tag ou push n'est effectué automatiquement par la préparation documentaire.
+Chaque PR devra comporter une section « Usage de l'IA » : outil, demande, éléments repris/modifiés/rejetés, revue humaine, vérifications et part par compétence. Voir [AI_USAGE.md](doc/AI_USAGE.md). Le protocole et les plafonds décrivent l’organisation prévisionnelle. Les publications sont effectuées sur instruction explicite ; les corrections passent par une PR et conservent les commits et tags déjà publiés.
+
+## Protection de main
+
+La règle active `protect-main` impose une pull request et une approbation, bloque la suppression et les force push, sans acteur de contournement. Les nouveaux commits annulent les approbations précédentes ; les discussions doivent être résolues avant fusion. Aucun contrôle CI n’est encore obligatoire : les workflows restent à implémenter. Réglages vérifiés le 20 octobre 2026.

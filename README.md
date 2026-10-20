@@ -90,10 +90,10 @@ React + TypeScript reste le choix de MINDCRIME : le frontend natif du modèle n�
 
 | ID | Étudiant et compte développeur | Responsabilité | Algorithmes prévus |
 | --- | --- | --- | --- |
-| D1 | [Mohamed BOUGHMADI](https://github.com/boughbugh) | Génération automatique des enquêtes | Génération procédurale, backtracking |
-| D2 | [Yacine FERDJALLAH](https://github.com/yacine78) | Moteur logique et contradictions | Satisfaction et propagation de contraintes |
+| D1 | [Mohamed BOUGHMADI](https://github.com/boughbough) | Génération automatique des enquêtes | Génération procédurale, backtracking |
+| D2 | [Yacine FERDJALLAH](https://github.com/yaciiine78) | Moteur logique et contradictions | Satisfaction et propagation de contraintes |
 | D3 | [Melissa BENZIDANE](https://github.com/mbenzidane17) | Chronologies et déplacements | Graphes temporels, Dijkstra |
-| D4 | [Mohamet THIAM](https://github.com/mhthiam11) | Comportements des personnages, moteur de jeu et interactions multijoueurs | Machines à états, arbres de décision |
+| D4 | [Mohamet THIAM](https://github.com/mhtthiam11) | Comportements des personnages, moteur de jeu et interactions multijoueurs | Machines à états, arbres de décision |
 | D5 | [Salah-Eddine BEKKARI](https://github.com/salahbekkaripro) | Moteur de déduction et explications | Recherche d'hypothèses, élimination de scénarios impossibles |
 
 Les cinq membres participeront également aux tests, aux revues de code et à l'intégration.
@@ -111,7 +111,7 @@ Le [planning détaillé des livraisons](doc/RELEASES.md) précise les fonctionna
 
 R1 et les identifiants développeurs sont dus le **20 octobre 2026 à 23 h 59**. Les devoirs R2, R3 et R4 affichent **12 h 50**, alors que le planning général mentionne 23 h 59 : l’équipe prévoit de déposer à l’heure la plus tôt et vérifiera les horaires des devoirs. Étape intermédiaire le **1er décembre 2026** ; transparents le **18 janvier 2027 à 23 h 59**, soutenance en séance le 19 janvier.
 
-Chaque rendu est individuel et demande l’**URL du commit exact** : `https://github.com/salahbekkaripro/MINDCRIME/commit/<SHA>`, à compléter après le commit. Le devoir des identifiants demande l’URL du profil GitHub. À la sortie de chaque séance, un commit et un tag SNAPSHOT sont attendus ; les livraisons seront figées avec les tags `v0.1.0`, `v0.2.0` et `v1.0.0`. Aucun commit, tag ou push n’est effectué ici.
+Chaque rendu est individuel et demande l’**URL du commit exact**. Premier état R1 publié : [commit `3f51020`](https://github.com/salahbekkaripro/MINDCRIME/commit/3f510204be40aec7ed44b90e1880e4603c6a38c2), tagué `v0.0.1`. Toute correction ultérieure doit être déposée avec son propre commit si elle est retenue pour le rendu. Le devoir des identifiants demande l’URL du profil GitHub. À la sortie de chaque séance, un commit et un tag SNAPSHOT sont attendus ; les livraisons seront figées avec les tags `v0.1.0`, `v0.2.0` et `v1.0.0`. Le commit et le tag initiaux sont conservés ; les corrections documentaires sont proposées par pull request.
 
 Coefficients : R1 10 %, R2 20 %, R3 20 %, R4 25 %, R5 25 %. Le dossier est limité à quatre pages pour R1 ; il évoluera ensuite sans limite de pages pour R2/R3.
 
@@ -130,7 +130,7 @@ Le contrat du modèle est respecté : `make -C doc` compile la source unique `do
 
 ## Mise en place et attendus du rendu R1
 
-Le dossier couvre l’équipe de cinq étudiants et ses comptes développeurs, le projet et son caractère innovant, les scénarios d’usage, l’architecture front → API → back → BD, les frameworks envisagés, le protocole IA et l’URL du dépôt principal. Il est conservé en Markdown compilé en PDF dans `/doc` et devra être versionné puis actualisé avec chaque livraison. Les fichiers sont préparés localement ; aucun commit n’est effectué par cette rédaction.
+Le dossier couvre l’équipe de cinq étudiants et ses comptes développeurs, le projet et son caractère innovant, les scénarios d’usage, l’architecture front → API → back → BD, les frameworks envisagés, le protocole IA et l’URL du dépôt principal. Il est conservé en Markdown compilé en PDF dans `/doc` et devra être versionné puis actualisé avec chaque livraison. Un premier état R1 est publié au commit `3f51020`, tagué `v0.0.1` ; les corrections suivantes conservent cet historique.
 
 La fiche pédagogique « Projet » **5E7MAPRO**, année **2026-2027**, transmise par l’équipe, vise un proof-of-concept livré en v1.0.0, un travail itératif, une architecture structurée, une chaîne CI/CD et une évaluation individuelle au sein du groupe. Son descriptif prévoit une autorisation possible de l’IA selon les règles du cours ; sa rubrique évaluation **interdit l’IA lors des évaluations**. Le protocole proposé ne vaut pas dérogation : les consignes propres à chaque livrable évalué encadrent l’assistance autorisée.
 

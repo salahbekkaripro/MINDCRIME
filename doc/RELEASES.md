@@ -1,6 +1,6 @@
 # Livraisons et responsabilités
 
-MINDCRIME — planning prévisionnel établi au rendu R1, le 20 octobre 2026. La version initiale est **0.0.1**. Les versions ci-dessous sont des objectifs de livraison, pas des releases déjà publiées. Le dépôt local ne contient encore aucun commit ; les fichiers documentaires sont préparés mais ne sont pas encore versionnés dans un commit.
+MINDCRIME — planning prévisionnel établi au rendu R1, le 20 octobre 2026. La version initiale est **0.0.1**. Les versions ci-dessous sont des objectifs de livraison, pas des releases déjà publiées. Le premier état documentaire R1 est publié au [commit `3f51020`](https://github.com/salahbekkaripro/MINDCRIME/commit/3f510204be40aec7ed44b90e1880e4603c6a38c2), tagué `v0.0.1`. Les corrections documentaires ultérieures ont leurs propres commits ; le tag initial est conservé.
 
 Source des échéances : texte de CoursEnLigne transmis par l’équipe. Le [guide du professeur](https://github.com/pascalpoizat/template-projet-m1-miage/blob/main/documentation.md) complète les règles de travail. La lecture de `documentation.pdf` à la racine du template est demandée par le cours ; l’équipe doit s’appuyer sur ce guide pour ses livraisons.
 
@@ -42,7 +42,9 @@ Le backend et ses tests sont développés en priorité, puis chaque fonctionnali
 
 ## Préparation des versions
 
-**R1 — maintenant.** Finaliser le dossier, vérifier les cinq comptes et leur attribution Git, puis enregistrer le rendu dans un commit et publier uniquement après décision de l’équipe. L’URL à fournir est celle du **commit exact**, au format `https://github.com/salahbekkaripro/MINDCRIME/commit/<SHA>`. `<SHA>` est un emplacement à remplacer après création du commit, pas un identifiant existant. Aucun commit ni push n’est créé par la préparation de cette documentation.
+**R1 — état publié.** Le [premier commit R1 `3f51020`](https://github.com/salahbekkaripro/MINDCRIME/commit/3f510204be40aec7ed44b90e1880e4603c6a38c2) est publié sur GitHub et identifié par le tag `v0.0.1`. Le compte administrateur est `salahbekkaripro`, le collaborateur actif `yaciiine78` et les invitations restantes concernent `boughbough`, `mbenzidane17` et `mhtthiam11` lors de la vérification du 20 octobre 2026. Chaque destinataire doit accepter sa propre invitation. Les comptes et l’identité de commit devront correspondre à ceux réellement utilisés par chacun.
+
+L’URL à déposer doit correspondre au **commit exact retenu** : utiliser le lien ci-dessus pour le premier état, ou le commit des corrections si celles-ci sont intégrées et retenues. Ne pas déplacer le tag initial ni réécrire son commit. Le dossier actualisé ne prétend pas que ses corrections figurent déjà dans le premier commit.
 
 **v0.1.0.** Construire le backend et les tests en priorité, intégrer les cinq features A sur les quatre couches et démontrer les deux modes. Prévoir CI, mesures de couverture et qualité, README et badges fondés sur des résultats réels, dossier actualisé et déclaration de l’usage réel de l’IA. Publier la page de projet ; faire construire la documentation par la CI et la joindre à la release. Les objectifs et le bilan documentaire de R1 ne remplacent pas le bilan réel du développement livré.
 
