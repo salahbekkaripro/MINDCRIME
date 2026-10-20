@@ -11,6 +11,7 @@ import json
 import math
 import re
 
+import reportlab
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
@@ -26,9 +27,17 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parent
 FONT_DIR = Path('/usr/share/fonts/truetype/dejavu')
-for name, filename in [('Body', 'DejaVuSans.ttf'), ('Body-Bold', 'DejaVuSans-Bold.ttf'),
-                       ('Mono', 'DejaVuSansMono.ttf')]:
+if not FONT_DIR.is_dir():
+    FONT_DIR = Path(reportlab.__file__).resolve().parent / 'fonts'
+    font_files = [('Body', 'Vera.ttf'), ('Body-Bold', 'VeraBd.ttf')]
+else:
+    font_files = [('Body', 'DejaVuSans.ttf'), ('Body-Bold', 'DejaVuSans-Bold.ttf')]
+for name, filename in font_files:
     pdfmetrics.registerFont(TTFont(name, str(FONT_DIR / filename)))
+if not (FONT_DIR / 'DejaVuSansMono.ttf').is_file():
+    pdfmetrics.registerFont(pdfmetrics.Font('Mono', 'Courier', 'WinAnsiEncoding'))
+else:
+    pdfmetrics.registerFont(TTFont('Mono', str(FONT_DIR / 'DejaVuSansMono.ttf')))
 pdfmetrics.registerFontFamily('Body', normal='Body', bold='Body-Bold')
 
 styles = getSampleStyleSheet()

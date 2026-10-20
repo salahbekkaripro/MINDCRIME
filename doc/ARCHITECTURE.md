@@ -53,8 +53,8 @@ Le moteur ne dépendra ni de Spring, ni de JPA, ni de l’interface. Les cas d�
 ```mermaid
 flowchart TD
     UI[Frontend React + TypeScript] --> API[API REST]
-    API --> E[Cas d’utilisation Enquêteur]
-    API --> A[Cas d’utilisation Alibi]
+    API --> E[Cas d utilisation Enquêteur]
+    API --> A[Cas d utilisation Alibi]
     E --> G[D1 : génération]
     E --> V[Vérification commune]
     A --> V
@@ -71,7 +71,7 @@ flowchart TD
 
 Le graphe représente les appels des cas d’utilisation ; les dépendances de code restent dirigées vers les contrats et le moteur. La vérification commune est une orchestration des capacités D2, D3 et D5 dans la couche application ; ce n’est pas un second solveur. Elle sera utilisée après une génération et après un nouveau témoignage. Le générateur ne dépendra pas directement de JPA ou des contrôleurs : l’application pilotera la génération et la vérification, puis acceptera ou rejettera le candidat.
 
-La chronologie proposera les contraintes de présence et de déplacement ; le module de contraintes vérifiera la cohérence ; la déduction explorera et expliquera les hypothèses à l’aide de ces résultats. Les détails des contrats Java restent à concevoir. Les cycles entre modules seront évités en faisant coordonner les échanges par les cas d’utilisation et en partageant uniquement des modèles métier et des interfaces explicites.
+La chronologie proposera les contraintes de présence et de déplacement ; le module de contraintes vérifiera la cohérence logique des déclarations ; la déduction explorera et expliquera les hypothèses à l’aide de ces résultats, sans confier au module D3 la désignation du coupable. Pour D3-A et D3-B, un petit réseau fixe et entièrement défini sera fourni dès v0.1.0, indépendamment de la carte générée par D1 en v1.0.0. Le périmètre initial suppose des durées de trajet fixes et non négatives : D3-A vérifie un déplacement, D3-B une suite d'événements ordonnés avec fenêtres horaires et attente possible. Une information manquante mène à un résultat non vérifiable ; une impossibilité n'est conclue que dans le réseau déclaré complet. Les détails des contrats Java restent à concevoir. Les cycles entre modules seront évités en faisant coordonner les échanges par les cas d’utilisation et en partageant uniquement des modèles métier et des interfaces explicites.
 
 ## Répartition des responsabilités
 

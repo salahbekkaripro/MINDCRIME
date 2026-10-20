@@ -40,7 +40,7 @@ Objectifs à gauche, usage R1 à droite (documentation seule), estimé avec Code
 
 **Alibi.** Les utilisateurs incarneront les suspects, construiront leurs témoignages et répondront aux interrogatoires, avec la possibilité de mentir. Le moteur Java jouera le détective : il recherchera les contradictions et reconstruira les scénarios compatibles. Il devra conserver l'incertitude si les informations ne permettent pas de conclure.
 
-Le socle partagé réunira contraintes logiques, cohérence temporelle, déplacements, hypothèses et explications. Aucun appel obligatoire à une API d'IA ne devra intervenir dans ces algorithmes.
+Le socle partagé réunira contraintes logiques, cohérence temporelle, déplacements, hypothèses et explications. D2 vérifiera les contradictions logiques entre déclarations ; D3 la faisabilité spatio-temporelle ; D5 utilisera ces résultats pour comparer et expliquer les hypothèses, sans déléguer à D3 la désignation du coupable. Aucun appel obligatoire à une API d'IA ne devra intervenir dans ces algorithmes.
 
 ## Six scénarios rattachés aux features prévues
 
@@ -125,7 +125,7 @@ Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back
 | --- | --- | --- | --- |
 | D1 | Enquête à solution unique — génération procédurale, backtracking | Enquête à difficulté choisie — recherche sous contraintes avec budget d'indices | Carte de lieux jouable — génération de graphe connexe sous contraintes |
 | D2 | Contradictions de témoignages — satisfaction et propagation de contraintes | Groupe minimal de déclarations incompatibles — extraction de noyau insatisfiable | Correction minimale suggérée d'un témoignage — recherche de sous-ensembles minimaux |
-| D3 | Faisabilité d'un alibi — graphe temporel, Dijkstra | Itinéraire avec fenêtres horaires — recherche de chemin temporel | Reconstruction des ordres possibles d'événements — tri topologique et détection de cycles |
+| D3 | Un déplacement déclaré — Dijkstra | Suite de déplacements avec fenêtres horaires | Chronologie compatible ou conflit — tri topologique |
 | D4 | Interrogatoire cohérent des suspects — recherche de réponse sous contraintes, backtracking | Stratégie d'interrogatoire du détective — arbre de décision calculé par expectimax | Attribution équilibrée des rôles de suspects — appariement biparti pondéré (algorithme hongrois) |
 | D5 | Hypothèses expliquées — recherche et élimination de scénarios | Choix du prochain indice à examiner — gain d'information | Ensemble d'indices suffisant pour une accusation — couverture d'ensemble approchée |
 
