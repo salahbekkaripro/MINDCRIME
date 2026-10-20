@@ -126,7 +126,7 @@ make -C doc
 pdfinfo doc/dossier.pdf
 ```
 
-Le contrat du modèle est respecté : `make -C doc` compile la source unique `doc/dossier.md` en `doc/dossier.pdf`, régénère l’araignée et refuse une sortie qui ne contient pas exactement quatre pages A4. Python 3, ReportLab et les polices DejaVu Sans sont nécessaires ; GNU Make fournit la commande commune. Sur un autre environnement, la dépendance Python `reportlab` peut être installée dans un environnement virtuel. `pdfinfo` permet de vérifier indépendamment le résultat.
+Le contrat du modèle est respecté : `make -C doc` compile la source unique `doc/dossier.md` en `doc/dossier.pdf`, régénère l’araignée et refuse une sortie qui ne contient pas exactement quatre pages A4. Python 3, ReportLab et GNU Make sont nécessaires. Le générateur utilise DejaVu Sans si disponible, sinon les polices Vera fournies avec ReportLab. Sur un autre environnement, la dépendance Python `reportlab` peut être installée dans un environnement virtuel. `pdfinfo` permet de vérifier indépendamment le résultat.
 
 ## Mise en place et attendus du rendu R1
 

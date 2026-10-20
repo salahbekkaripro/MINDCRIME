@@ -40,13 +40,13 @@ Objectifs à gauche, usage R1 à droite (documentation seule), estimé avec Code
 
 **Alibi.** Les utilisateurs incarneront les suspects, construiront leurs témoignages et répondront aux interrogatoires, avec la possibilité de mentir. Le moteur Java jouera le détective : il recherchera les contradictions et reconstruira les scénarios compatibles. Il devra conserver l'incertitude si les informations ne permettent pas de conclure.
 
-Le socle partagé réunira contraintes logiques, cohérence temporelle, déplacements, hypothèses et explications. Aucun appel obligatoire à une API d'IA ne devra intervenir dans ces algorithmes.
+Le socle partagé réunira contraintes logiques, cohérence temporelle, déplacements, hypothèses et explications. D2 vérifiera les contradictions logiques entre déclarations ; D3 la faisabilité spatio-temporelle ; D5 utilisera ces résultats pour comparer et expliquer les hypothèses, sans déléguer à D3 la désignation du coupable. Aucun appel obligatoire à une API d'IA ne devra intervenir dans ces algorithmes.
 
 ## Six scénarios rattachés aux features prévues
 
 - **S1 — Enquêteur / D1-A.** En tant que joueur, je lance une enquête générée et vérifiée, afin de disposer d'une énigme à solution unique. Le moteur construit les données, l'API restitue l'enquête et le front affiche les indices accessibles.
 - **S2 — Alibi / D2-A.** En tant que suspect, je soumets un témoignage, afin que sa compatibilité avec les déclarations connues soit évaluée. Les déclarations et contradictions seront enregistrées et consultables par l'API et l'écran de partie.
-- **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je confronte un alibi aux lieux et horaires, afin d'identifier un trajet impossible. Le calcul sera exposé et visualisé dans la chronologie.
+- **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je vérifie un déplacement entre deux événements dans un réseau connu : le moteur compare le trajet minimal au temps disponible. Il indique si l'alibi est incompatible, compatible avec les contraintes connues — sans être prouvé — ou non vérifiable faute de données. Le résultat et le trajet seront visibles dans la chronologie.
 - **S4 — Enquêteur / D4-A.** En tant que joueur, j'interroge un suspect, afin d'obtenir des réponses cohérentes avec ce qu'il sait ou prétend savoir. Le coupable ment sans contredire ses déclarations passées ni les preuves déjà révélées. L'échange est persisté et affiché.
 - **S5 — Deux modes / D5-A.** En tant que joueur, je consulte les hypothèses et leurs motifs d'élimination, afin de comprendre une déduction fondée sur les indices. Les résultats seront persistés, exposés par l'API et présentés dans l'interface.
 - **S6 — Alibi / D4-B.** En tant que suspect, je réponds à un détective qui choisit ses questions en anticipant mes réponses possibles, afin de défendre mon témoignage face à une stratégie d'interrogatoire calculée.
@@ -125,7 +125,7 @@ Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back
 | --- | --- | --- | --- |
 | D1 | Enquête à solution unique — génération procédurale, backtracking | Enquête à difficulté choisie — recherche sous contraintes avec budget d'indices | Carte de lieux jouable — génération de graphe connexe sous contraintes |
 | D2 | Contradictions de témoignages — satisfaction et propagation de contraintes | Groupe minimal de déclarations incompatibles — extraction de noyau insatisfiable | Correction minimale suggérée d'un témoignage — recherche de sous-ensembles minimaux |
-| D3 | Faisabilité d'un alibi — graphe temporel, Dijkstra | Itinéraire avec fenêtres horaires — recherche de chemin temporel | Reconstruction des ordres possibles d'événements — tri topologique et détection de cycles |
+| D3 | Un déplacement déclaré — Dijkstra | Suite de déplacements avec fenêtres horaires | Chronologie compatible ou conflit — tri topologique |
 | D4 | Interrogatoire cohérent des suspects — recherche de réponse sous contraintes, backtracking | Stratégie d'interrogatoire du détective — arbre de décision calculé par expectimax | Attribution équilibrée des rôles de suspects — appariement biparti pondéré (algorithme hongrois) |
 | D5 | Hypothèses expliquées — recherche et élimination de scénarios | Choix du prochain indice à examiner — gain d'information | Ensemble d'indices suffisant pour une accusation — couverture d'ensemble approchée |
 

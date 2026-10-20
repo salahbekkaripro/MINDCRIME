@@ -28,7 +28,7 @@ Les identifiants A, B et C désignent respectivement les trois itérations. Chaq
 | --- | --- | --- | --- |
 | D1 · Mohamed BOUGHMADI | Enquête à solution unique | Difficulté choisie avec budget d’indices | Carte de lieux jouable sous contraintes |
 | D2 · Yacine FERDJALLAH | Contradictions de témoignages | Groupe minimal de déclarations incompatibles | Correction minimale d’un témoignage |
-| D3 · Melissa BENZIDANE | Faisabilité d’alibi et trajets | Itinéraire avec fenêtres horaires | Ordres possibles d’événements |
+| D3 · Melissa BENZIDANE | Un déplacement déclaré | Suite de déplacements avec fenêtres horaires | Chronologie compatible ou conflit temporel |
 | D4 · Mohamet THIAM | Interrogatoire cohérent des suspects | Stratégie d'interrogatoire du détective | Attribution équilibrée des rôles |
 | D5 · Salah-Eddine BEKKARI | Hypothèses et explications | Choix du prochain indice | Indices suffisants pour une accusation |
 
