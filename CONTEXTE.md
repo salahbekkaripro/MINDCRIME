@@ -19,7 +19,7 @@ Dépôt principal : https://github.com/salahbekkaripro/MINDCRIME
 | D1 | Mohamed BOUGHMADI — [boughbough](https://github.com/boughbough) | Génération procédurale et backtracking | Générer une enquête à solution unique |
 | D2 | Yacine FERDJALLAH — [yaciiine78](https://github.com/yaciiine78) | Satisfaction et propagation de contraintes | Détecter les contradictions de témoignages |
 | D3 | Melissa BENZIDANE — [mbenzidane17](https://github.com/mbenzidane17) | Graphes temporels et Dijkstra | Vérifier la faisabilité d'un alibi et des déplacements |
-| D4 | Mohamet THIAM — [mhtthiam11](https://github.com/mhtthiam11) | Machines à états et comportements | Gérer les parties et l'interrogatoire initial |
+| D4 | Mohamet THIAM — [mhtthiam11](https://github.com/mhtthiam11) | Comportements des suspects et du détective | Interrogatoire cohérent des suspects |
 | D5 | Salah-Eddine BEKKARI — [salahbekkaripro](https://github.com/salahbekkaripro) | Recherche d'hypothèses et explications | Éliminer les scénarios impossibles et expliquer les déductions |
 
 Ces domaines identifient les contributions individuelles, sans réserver une couche technique à une personne. Tous participent aux tests, aux revues, à la documentation, à la CI/CD et aux livraisons. Chaque feature doit toucher **BD, backend, API REST et frontend**. Le backend et ses tests sont développés en priorité.

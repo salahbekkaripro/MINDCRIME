@@ -91,7 +91,7 @@ def radar():
 
     for panel, cx in enumerate((width / 4, 3 * width / 4)):
         title = 'OBJECTIFS DE DÉVELOPPEMENT' if panel == 0 else 'USAGE DOCUMENTAIRE R1'
-        subtitle = 'Prévisionnel' if panel == 0 else 'Estimations de cette session'
+        subtitle = 'Prévisionnel' if panel == 0 else 'Estimation R1 (documentation)'
         drawing.add(String(cx, 253, title, fontName='Body-Bold', fontSize=7.7,
                            textAnchor='middle', fillColor=ink))
         drawing.add(String(cx, 241, subtitle, fontName='Body', fontSize=6.4,

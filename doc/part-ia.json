@@ -1,6 +1,6 @@
 {
   "titre": "Assistance IA — objectifs et bilan documentaire R1",
-  "statut": "Objectifs prévisionnels et estimations de l’usage constaté dans cette conversation",
+  "statut": "Objectifs prévisionnels et estimations de l’usage constaté pendant la rédaction de R1",
   "perimetre": "Bilan limité à la documentation R1 et à son générateur PDF. Aucun code applicatif, algorithme métier, workflow ou suite de tests applicatifs. Les objectifs concernent le fonctionnement prévu pour le développement futur.",
   "axes": [
     {
@@ -85,5 +85,5 @@
     }
   ],
   "mode": "bilan",
-  "methode": "Estimations de Codex fondées sur les apports visibles dans cette conversation ; pas de mesure exhaustive ni de comptage Git. 100 % Code concerne la saisie du générateur, pas l’origine humaine des besoins. Les axes sans activité applicable restent null et ne sont jamais représentés à 0 %."
+  "methode": "Estimations proposées avec Codex à partir de la rédaction de R1, puis relues par l’équipe. Pas de mesure exhaustive ni de comptage Git. 100 % Code concerne la saisie du générateur, pas l’origine humaine des besoins. Les axes sans activité applicable restent null et ne sont jamais représentés à 0 %."
 }

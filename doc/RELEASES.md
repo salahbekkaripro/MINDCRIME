@@ -29,7 +29,7 @@ Les identifiants A, B et C désignent respectivement les trois itérations. Chaq
 | D1 · Mohamed BOUGHMADI | Enquête à solution unique | Difficulté choisie avec budget d’indices | Carte de lieux jouable sous contraintes |
 | D2 · Yacine FERDJALLAH | Contradictions de témoignages | Groupe minimal de déclarations incompatibles | Correction minimale d’un témoignage |
 | D3 · Melissa BENZIDANE | Faisabilité d’alibi et trajets | Itinéraire avec fenêtres horaires | Ordres possibles d’événements |
-| D4 · Mohamet THIAM | Partie, états et interrogatoire initial | Interrogatoire adaptatif | Attribution équilibrée des rôles |
+| D4 · Mohamet THIAM | Interrogatoire cohérent des suspects | Stratégie d'interrogatoire du détective | Attribution équilibrée des rôles |
 | D5 · Salah-Eddine BEKKARI | Hypothèses et explications | Choix du prochain indice | Indices suffisants pour une accusation |
 
 Chaque porteur préparera la fiche de sa feature, son algorithme et ses tests en priorité, puis ses migrations, son cas d’utilisation, son API et son écran. Une revue par un autre membre et une démonstration du scénario seront prévues avant intégration. Les nouvelles fonctionnalités ne seront pas remplacées par une simple optimisation ou une stabilisation.
