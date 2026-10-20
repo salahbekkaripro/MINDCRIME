@@ -93,7 +93,7 @@ React + TypeScript reste le choix de MINDCRIME : le frontend natif du modèle n�
 | D1 | [Mohamed BOUGHMADI](https://github.com/boughbough) | Génération automatique des enquêtes | Génération procédurale, backtracking |
 | D2 | [Yacine FERDJALLAH](https://github.com/yaciiine78) | Moteur logique et contradictions | Satisfaction et propagation de contraintes |
 | D3 | [Melissa BENZIDANE](https://github.com/mbenzidane17) | Chronologies et déplacements | Graphes temporels, Dijkstra |
-| D4 | [Mohamet THIAM](https://github.com/mhtthiam11) | Comportements des personnages, moteur de jeu et interactions multijoueurs | Machines à états, arbres de décision |
+| D4 | [Mohamet THIAM](https://github.com/mhtthiam11) | Comportements des personnages, moteur de jeu et interactions multijoueurs | Recherche sous contraintes, expectimax, appariement biparti |
 | D5 | [Salah-Eddine BEKKARI](https://github.com/salahbekkaripro) | Moteur de déduction et explications | Recherche d'hypothèses, élimination de scénarios impossibles |
 
 Les cinq membres participeront également aux tests, aux revues de code et à l'intégration.
@@ -134,7 +134,7 @@ Le dossier couvre l’équipe de cinq étudiants et ses comptes développeurs, l
 
 La fiche pédagogique « Projet » **5E7MAPRO**, année **2026-2027**, transmise par l’équipe, vise un proof-of-concept livré en v1.0.0, un travail itératif, une architecture structurée, une chaîne CI/CD et une évaluation individuelle au sein du groupe. Son descriptif prévoit une autorisation possible de l’IA selon les règles du cours ; sa rubrique évaluation **interdit l’IA lors des évaluations**. Le protocole proposé ne vaut pas dérogation : les consignes propres à chaque livrable évalué encadrent l’assistance autorisée.
 
-Le détail de la mise en place prévue et des responsabilités figure dans [ARCHITECTURE.md](doc/ARCHITECTURE.md). Deux graphiques présentent séparément les objectifs prévisionnels avec leurs plafonds et l’usage documentaire R1 estimé à partir de cette conversation ; un tableau rassemble les pourcentages. Le bilan est limité aux documents et au générateur PDF, sans code applicatif ; les axes sans activité sont N/A et les dépassements sont expliqués dans le protocole IA. Après chaque feature et à chaque livraison, l’équipe mettra les données à jour ; `make -C doc` régénérera le graphique et le PDF. Les pourcentages ne sont pas calculés automatiquement.
+Le détail de la mise en place prévue et des responsabilités figure dans [ARCHITECTURE.md](doc/ARCHITECTURE.md). Deux graphiques présentent séparément les objectifs prévisionnels avec leurs plafonds et l’usage documentaire R1 estimé pour la rédaction de R1 ; un tableau rassemble les pourcentages. Le bilan est limité aux documents et au générateur PDF, sans code applicatif ; les axes sans activité sont N/A et les dépassements sont expliqués dans le protocole IA. Après chaque feature et à chaque livraison, l’équipe mettra les données à jour ; `make -C doc` régénérera le graphique et le PDF. Les pourcentages ne sont pas calculés automatiquement.
 
 ## Documentation et protocole IA
 

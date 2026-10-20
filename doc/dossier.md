@@ -6,7 +6,7 @@
 
 ## Présentation, équipe et comptes développeurs
 
-Jeu d’enquête interactif à moteur algorithmique Java. À R1, seuls la documentation et son outillage sont présents. Application, tests et CI restent à implémenter ; les objectifs sont prévisionnels.
+Jeu d’enquête interactif à moteur algorithmique Java ; à R1, seule la documentation est présente.
 
 | ID | Étudiant | Compte GitHub | Responsabilité principale |
 | --- | --- | --- | --- |
@@ -16,19 +16,17 @@ Jeu d’enquête interactif à moteur algorithmique Java. À R1, seuls la docume
 | D4 | Mohamet THIAM | https://github.com/mhtthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |
 | D5 | Salah-Eddine BEKKARI | https://github.com/salahbekkaripro | Moteur de déduction et explications |
 
-Cinq étudiants, cinq domaines complémentaires. Tous contribueront aux tests, aux revues et à l’intégration. Chaque membre devra vérifier que son email Git est associé à son compte GitHub ; emails non fournis, attribution non encore vérifiée. Dépôt : https://github.com/salahbekkaripro/MINDCRIME
+Cinq domaines complémentaires ; tous contribueront aux tests, aux revues et à l’intégration. Dépôt : https://github.com/salahbekkaripro/MINDCRIME
 
 ## Positionnement et périmètre commun
 
-MINDCRIME associera inversion des rôles et moteur logique explicable : le joueur enquêtera ou deviendra suspect face au détective Java. L’application calculera les scénarios compatibles. Ce positionnement reste à implémenter et à comparer aux jeux existants.
-
-L’entité pivot sera **Partie**, reliant enquête, participants, preuves, témoignages, événements et déductions.
+MINDCRIME reposera sur un moteur logique Java commun à deux modes. En mode Enquêteur, il génère des enquêtes et vérifie formellement qu’un seul coupable est déductible des indices accessibles. Des jeux d’enquête procéduraux existent déjà (Shadows of Doubt, par exemple) ; notre différence tient à cette garantie vérifiée. En mode Alibi, les rôles s’inversent : les joueurs sont les suspects et le moteur joue le détective, qui détecte les contradictions, isole les déclarations incompatibles et explique ses déductions. Le même moteur construit des mensonges cohérents et démasque ceux des humains.
 
 ## Assistance IA · objectifs et usage documentaire R1
 
 ![Part IA par compétence](part-ia.svg)
 
-Objectifs de développement à gauche ; usage documentaire R1 estimé par Codex à droite, sans code applicatif. N/A ≠ 0 %. Contenus et consignes apportés par l’équipe. Les dépassements sont déclarés et expliqués dans doc/AI_USAGE.md ; données : doc/part-ia.json.
+Objectifs à gauche ; usage R1 à droite (documentation seule), estimé avec Codex et relu par l’équipe. N/A ≠ 0 %. R1 étant une phase de rédaction, l’IA a produit l’essentiel du texte, d’où les dépassements ; « Validation » couvre les contrôles automatiques de mise en page, le contenu ayant été relu par l’équipe. Objectif dès v0.1.0 : rester sous les plafonds. Détails : doc/AI_USAGE.md.
 
 <!-- pagebreak -->
 
@@ -49,9 +47,9 @@ Le socle partagé réunira contraintes logiques, cohérence temporelle, déplace
 - **S1 — Enquêteur / D1-A.** En tant que joueur, je lance une enquête générée et vérifiée, afin de disposer d'une énigme à solution unique. Le moteur construit les données, l'API restitue l'enquête et le front affiche les indices accessibles.
 - **S2 — Alibi / D2-A.** En tant que suspect, je soumets un témoignage, afin que sa compatibilité avec les déclarations connues soit évaluée. Les déclarations et contradictions seront enregistrées et consultables par l'API et l'écran de partie.
 - **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je confronte un alibi aux lieux et horaires, afin d'identifier un trajet impossible. Le calcul sera exposé et visualisé dans la chronologie.
-- **S4 — Alibi / D4-A.** En tant que participant, je rejoins une partie et réponds à un personnage, afin de faire progresser l'interrogatoire selon son état. L'état et les interactions seront persistés et affichés.
+- **S4 — Enquêteur / D4-A.** En tant que joueur, j'interroge un suspect, afin d'obtenir des réponses cohérentes avec ce qu'il sait ou prétend savoir. Le coupable ment sans contredire ses déclarations passées ni les preuves déjà révélées ; l'échange est persisté et affiché.
 - **S5 — Deux modes / D5-A.** En tant que joueur, je consulte les hypothèses et leurs motifs d'élimination, afin de comprendre une déduction fondée sur les indices. Les résultats seront persistés, exposés par l'API et présentés dans l'interface.
-- **S6 — Alibi / D4-B.** En tant que suspect, je réponds à un interrogatoire adapté aux réponses précédentes, afin de participer à une confrontation cohérente. Un arbre de décision pilotera les questions et leur suivi.
+- **S6 — Alibi / D4-B.** En tant que suspect, je réponds à un détective qui choisit ses questions en anticipant mes réponses possibles, afin de défendre mon témoignage face à une stratégie d'interrogatoire calculée.
 
 ## Critères d'acceptation à détailler dans les fiches
 
@@ -109,7 +107,7 @@ site/                         page de projet prévue
 Le moteur ne dépendra ni de Spring, ni de JPA, ni de l’interface. Les cas d’utilisation appelleront le moteur et les ports de stockage ; les adaptateurs JPA implémenteront ces ports. L’API appellera les cas d’utilisation et ne contiendra pas d’algorithmes métier. Des tests ArchUnit devront vérifier ces frontières. 
 
 
-L’entité pivot sera Partie. D1 générera des candidats ; la vérification commune combinera contraintes (D2), temps et trajets (D3), hypothèses (D5). Les règles d’états et d’interrogatoire relèveront de D4. Une seule solution devra être déductible des indices accessibles dans le mode Enquêteur ; le mode Alibi pourra conserver plusieurs scénarios compatibles.
+L’entité pivot sera Partie. D1 générera des candidats ; la vérification commune combinera contraintes (D2), temps et trajets (D3), hypothèses (D5). Les comportements des suspects et du détective, ainsi que les états de partie, relèveront de D4. Une seule solution devra être déductible des indices accessibles dans le mode Enquêteur ; le mode Alibi pourra conserver plusieurs scénarios compatibles.
 
 Chaque responsable travaillera dans plusieurs classes de son domaine, avec revue croisée. Les modules évolueront entre les releases ; les versions seront conservées par Git. Docker Compose, CI, qualité et publication restent à implémenter ; seul make -C doc → doc/dossier.pdf est disponible. Licence : à définir.
 
@@ -128,18 +126,18 @@ Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back
 | D1 | Enquête à solution unique — génération procédurale, backtracking | Enquête à difficulté choisie — recherche sous contraintes avec budget d'indices | Carte de lieux jouable — génération de graphe connexe sous contraintes |
 | D2 | Contradictions de témoignages — satisfaction et propagation de contraintes | Groupe minimal de déclarations incompatibles — extraction de noyau insatisfiable | Correction minimale suggérée d'un témoignage — recherche de sous-ensembles minimaux |
 | D3 | Faisabilité d'un alibi — graphe temporel, Dijkstra | Itinéraire avec fenêtres horaires — recherche de chemin temporel | Reconstruction des ordres possibles d'événements — tri topologique et détection de cycles |
-| D4 | Partie et interrogatoire initial — machines à états | Questions adaptées aux réponses — arbres de décision | Attribution équilibrée des rôles de suspects — appariement biparti pondéré |
+| D4 | Interrogatoire cohérent des suspects — recherche de réponse sous contraintes, backtracking | Stratégie d'interrogatoire du détective — arbre de décision calculé par expectimax | Attribution équilibrée des rôles de suspects — appariement biparti pondéré (algorithme hongrois) |
 | D5 | Hypothèses expliquées — recherche et élimination de scénarios | Choix du prochain indice à examiner — gain d'information | Ensemble d'indices suffisant pour une accusation — couverture d'ensemble approchée |
 
 **R1 · maintenant : 20/10/2026, 23 h 59.** Version initiale 0.0.1 : dossier, équipe, architecture et organisation. Identifiants développeurs à déposer individuellement le même jour. Aucun backend ni release applicative n’est encore disponible.
 
-**Échéances suivantes.** Devoirs R2/R3/R4 : 12 h 50 aux dates du tableau ; le planning général indique 23 h 59. Organisation retenue : déposer à l’heure la plus tôt et vérifier le devoir. Point intermédiaire : 01/12/2026. Transparents : 18/01/2027, 23 h 59 ; soutenance en séance le 19/01. Coefficients R1 à R5 : 10 / 20 / 20 / 25 / 25 %.
+**Échéances suivantes.** Point intermédiaire : 01/12/2026. Transparents : 18/01/2027, 23 h 59 ; soutenance en séance le 19/01.
 
 ## Organisation du travail collectif
 
 Chaque étudiant développe les fonctionnalités de son domaine. Les cinq membres participent collectivement aux tests, aux revues de code, à la documentation, à la CI/CD et aux livraisons. Le backend et ses tests sont développés en priorité, puis chaque fonctionnalité est reliée à la base de données, à l’API REST et à l’interface.
 
-**Dépôt et versions.** Chaque membre dépose l’URL du commit exact retenu. Premier état R1 publié : 3f51020, tag v0.0.1 ; les corrections ultérieures ont leur propre commit. Commit et tag SNAPSHOT en fin de séance ; tags finaux v0.1.0, v0.2.0, v1.0.0 aux livraisons. Aucun tag futur créé ici. Détails : doc/RELEASES.md. Le dossier évoluera sans limite de pages après R1.
+**Dépôt et versions.** Chaque membre dépose l’URL du commit exact retenu. Premier état R1 publié : 3f51020, tag v0.0.1 ; les corrections ultérieures ont leur propre commit. Commit et tag SNAPSHOT en fin de séance ; tags finaux v0.1.0, v0.2.0, v1.0.0 aux livraisons. Détails : doc/RELEASES.md. Le dossier évoluera sans limite de pages après R1.
 
 ## Protocole d’usage de l’IA
 

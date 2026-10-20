@@ -80,7 +80,7 @@ La chronologie proposera les contraintes de présence et de déplacement ; le mo
 | D1 — Mohamed BOUGHMADI | moteur/generation | Construire des candidats par génération procédurale et backtracking |
 | D2 — Yacine FERDJALLAH | moteur/contraintes | Satisfaction, propagation de contraintes et contradictions |
 | D3 — Melissa BENZIDANE | moteur/chronologies | Graphes temporels, Dijkstra et faisabilité des déplacements |
-| D4 — Mohamet THIAM | moteur/parties, moteur/agents | États des parties, comportements et interactions multijoueurs |
+| D4 — Mohamet THIAM | moteur/parties, moteur/agents | États des parties, comportements des suspects et du détective, interactions multijoueurs |
 | D5 — Salah-Eddine BEKKARI | moteur/deduction | Recherche d’hypothèses, élimination et explications |
 
 L’équipe définira ensemble `moteur/modele`, les contrats entre modules, les conventions API et le schéma commun. D4 sera le référent fonctionnel du cycle de partie ; l’application, l’API et la persistance seront complétées collectivement par chaque porteur de feature.

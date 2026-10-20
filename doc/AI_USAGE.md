@@ -69,7 +69,7 @@ Un objectif n’est pas un quota à atteindre : l’équipe pourra utiliser moin
 
 ## Bilan de l’usage réel pour R1
 
-Le graphique de droite présente en orange un **bilan documentaire R1 estimé à partir de cette conversation**. Il ne s’agit pas du bilan du futur logiciel : aucun backend ni algorithme métier n’a été développé. Les chiffres sont des estimations de Codex, avec justification axe par axe dans le JSON ; ils ne sont pas des mesures de temps, un audit indépendant ou un comptage de commits.
+Le graphique de droite présente en orange un **bilan documentaire R1 estimé pour la rédaction de R1**. Il ne s’agit pas du bilan du futur logiciel : aucun backend ni algorithme métier n’a été développé. Les chiffres sont des estimations de Codex, avec justification axe par axe dans le JSON ; ils ne sont pas des mesures de temps, un audit indépendant ou un comptage de commits.
 
 | Compétence | Part IA estimée R1 | Périmètre et éléments observables |
 | --- | --- | --- |
