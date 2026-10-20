@@ -6,7 +6,7 @@
 
 ## Présentation, équipe et comptes développeurs
 
-Jeu d’enquête interactif à moteur algorithmique Java ; à R1, seule la documentation est présente.
+Jeu d’enquête interactif à moteur algorithmique Java. À R1, seule la documentation est présente.
 
 | ID | Étudiant | Compte GitHub | Responsabilité principale |
 | --- | --- | --- | --- |
@@ -16,7 +16,7 @@ Jeu d’enquête interactif à moteur algorithmique Java ; à R1, seule la docum
 | D4 | Mohamet THIAM | https://github.com/mhtthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |
 | D5 | Salah-Eddine BEKKARI | https://github.com/salahbekkaripro | Moteur de déduction et explications |
 
-Cinq domaines complémentaires ; tous contribueront aux tests, aux revues et à l’intégration. Dépôt : https://github.com/salahbekkaripro/MINDCRIME
+Cinq domaines complémentaires. Tous contribueront aux tests, aux revues et à l’intégration. Dépôt : https://github.com/salahbekkaripro/MINDCRIME
 
 ## Positionnement et périmètre commun
 
