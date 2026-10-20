@@ -53,8 +53,8 @@ Le moteur ne dépendra ni de Spring, ni de JPA, ni de l’interface. Les cas d�
 ```mermaid
 flowchart TD
     UI[Frontend React + TypeScript] --> API[API REST]
-    API --> E[Cas d’utilisation Enquêteur]
-    API --> A[Cas d’utilisation Alibi]
+    API --> E[Cas d utilisation Enquêteur]
+    API --> A[Cas d utilisation Alibi]
     E --> G[D1 : génération]
     E --> V[Vérification commune]
     A --> V
