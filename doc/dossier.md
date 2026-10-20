@@ -10,10 +10,10 @@ Jeu d’enquête interactif à moteur algorithmique Java. À R1, seuls la docume
 
 | ID | Étudiant | Compte GitHub | Responsabilité principale |
 | --- | --- | --- | --- |
-| D1 | Mohamed BOUGHMADI | https://github.com/boughbugh | Génération automatique des enquêtes |
-| D2 | Yacine FERDJALLAH | https://github.com/yacine78 | Moteur logique et contradictions |
+| D1 | Mohamed BOUGHMADI | https://github.com/boughbough | Génération automatique des enquêtes |
+| D2 | Yacine FERDJALLAH | https://github.com/yaciiine78 | Moteur logique et contradictions |
 | D3 | Melissa BENZIDANE | https://github.com/mbenzidane17 | Chronologies et déplacements |
-| D4 | Mohamet THIAM | https://github.com/mhthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |
+| D4 | Mohamet THIAM | https://github.com/mhtthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |
 | D5 | Salah-Eddine BEKKARI | https://github.com/salahbekkaripro | Moteur de déduction et explications |
 
 Cinq étudiants, cinq domaines complémentaires. Tous contribueront aux tests, aux revues et à l’intégration. Chaque membre devra vérifier que son email Git est associé à son compte GitHub ; emails non fournis, attribution non encore vérifiée. Dépôt : https://github.com/salahbekkaripro/MINDCRIME
@@ -139,7 +139,7 @@ Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back
 
 Chaque étudiant développe les fonctionnalités de son domaine. Les cinq membres participent collectivement aux tests, aux revues de code, à la documentation, à la CI/CD et aux livraisons. Le backend et ses tests sont développés en priorité, puis chaque fonctionnalité est reliée à la base de données, à l’API REST et à l’interface.
 
-**Dépôt et versions.** Chaque membre dépose l’URL du commit exact du rendu ; son SHA sera connu après création du commit. Commit et tag SNAPSHOT en fin de séance ; tags finaux v0.1.0, v0.2.0, v1.0.0 aux livraisons. Aucun tag futur créé ici. Détails : doc/RELEASES.md. Le dossier évoluera sans limite de pages après R1.
+**Dépôt et versions.** Chaque membre dépose l’URL du commit exact retenu. Premier état R1 publié : 3f51020, tag v0.0.1 ; les corrections ultérieures ont leur propre commit. Commit et tag SNAPSHOT en fin de séance ; tags finaux v0.1.0, v0.2.0, v1.0.0 aux livraisons. Aucun tag futur créé ici. Détails : doc/RELEASES.md. Le dossier évoluera sans limite de pages après R1.
 
 ## Protocole d’usage de l’IA
 
@@ -149,4 +149,4 @@ L’usage significatif sera tracé par PR ; l’araignée déclarera la part ré
 
 ## Dépôt et références
 
-https://github.com/salahbekkaripro/MINDCRIME — URL du rendu : /commit/<SHA>, à compléter après commit. Source : CoursEnLigne transmis par l’équipe, fiche Projet 5E7MAPRO (2026–2027) et guide https://github.com/pascalpoizat/template-projet-m1-miage (commit 3a11a78). Le template est facultatif ; page de projet publiée, documentation construite en CI et jointe aux releases, déclaration IA à chaque livraison restent obligatoires et à mettre en place.
+https://github.com/salahbekkaripro/MINDCRIME — Premier état R1 : commit 3f51020, tag v0.0.1 ; lien complet dans doc/RELEASES.md. Pour une correction retenue, déposer son commit exact. Sources : CoursEnLigne, fiche Projet 5E7MAPRO et guide https://github.com/pascalpoizat/template-projet-m1-miage . Page publiée, PDF construit en CI et joint aux releases, bilan IA par livraison restent à mettre en place.
