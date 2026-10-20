@@ -84,7 +84,7 @@ Le graphique de droite présente en orange un **bilan documentaire R1 estimé po
 | Conception | 70 % | Proposition assistée de l’architecture et des modules, dirigée et corrigée par l’équipe |
 | Idéation | 20 % | Concept humain, propositions complémentaires de features par l’agent |
 
-Les valeurs élevées ne retirent pas à l’équipe le rôle de pilotage, l’origine du sujet ou ses apports aux contenus. Une relecture ne transforme toutefois pas une génération IA en saisie humaine. Les estimations de rédaction, validation, spécification, conception et idéation sont qualitatives : leurs valeurs exactes ne peuvent pas être déduites automatiquement de la conversation.
+Les valeurs élevées ne retirent pas à l’équipe le rôle de pilotage, l’origine du sujet ou ses apports aux contenus. Une relecture ne transforme toutefois pas une génération IA en saisie humaine. Les estimations de rédaction, validation, spécification, conception et idéation sont qualitatives : elles ne constituent pas une mesure instrumentée du travail réalisé.
 
 Le bilan dépasse les plafonds prévisionnels sur Code, Rédaction, Validation, Spécification et Conception. Ces écarts sont déclarés : la préparation documentaire et son outillage sont fortement assistés, alors que les objectifs organisent le développement futur. Les périmètres diffèrent ; ce graphique ne prouve donc ni le respect des plafonds du futur logiciel ni une autorisation pédagogique. Les dépassements ne sont pas masqués en réduisant artificiellement l’usage réel.
 
@@ -102,6 +102,6 @@ Après chaque feature et à chaque livraison, l’équipe mettra les parts const
 
 ## Assistance documentaire effectivement utilisée
 
-L'équipe a fourni le concept, les deux modes, les identités et rôles, les technologies envisagées, les échéances et les consignes du rendu. Elle a demandé des adaptations au modèle du professeur, puis précisé le fonctionnement souhaité de la rédaction, du code et de l'aide algorithmique ; elle a également transmis le texte de la fiche pédagogique.
+L’équipe définit le concept, les deux modes, les rôles, les technologies envisagées et les objectifs de livraison. Le protocole distingue les apports humains, la génération assistée et les vérifications, conformément aux consignes du cours et à la fiche pédagogique.
 
-Codex a généré et remanié les fichiers documentaires, proposé des pistes de features et produit l'outillage PDF. Les contrôles techniques locaux de génération et pagination ont été exécutés par l'agent ; ils ne valent ni approbation humaine de chaque passage ni validation pédagogique. Aucun code applicatif n'a été produit. Le bilan documentaire de cette session est désormais estimé et expliqué ci-dessus, séparément des objectifs de développement et sans l’attribuer au logiciel encore absent.
+Codex a généré et remanié les fichiers documentaires, proposé des pistes de features et produit l'outillage PDF. Les contrôles techniques locaux de génération et pagination ont été exécutés par l'agent ; ils ne valent ni approbation humaine de chaque passage ni validation pédagogique. Aucun code applicatif n'a été produit. Le bilan documentaire R1 est estimé et expliqué ci-dessus, séparément des objectifs de développement et sans l’attribuer au logiciel encore absent.

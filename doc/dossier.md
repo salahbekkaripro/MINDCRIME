@@ -10,7 +10,7 @@ Jeu d’enquête interactif à moteur algorithmique Java. À R1, seule la docume
 
 | ID | Étudiant | Compte GitHub | Responsabilité principale |
 | --- | --- | --- | --- |
-| D1 | Mohamed BOUGHMADI | https://github.com/boughbough | Génération automatique des enquêtes |
+| D1 | Mohamed BOUGHMADI | https://github.com/MohamedBoughmadi | Génération automatique des enquêtes |
 | D2 | Yacine FERDJALLAH | https://github.com/yaciiine78 | Moteur logique et contradictions |
 | D3 | Melissa BENZIDANE | https://github.com/mbenzidane17 | Chronologies et déplacements |
 | D4 | Mohamet THIAM | https://github.com/mhtthiam11 | Comportements des personnages, moteur de jeu et interactions multijoueurs |

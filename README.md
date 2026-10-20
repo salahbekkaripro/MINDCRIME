@@ -82,7 +82,7 @@ La démarche suivra l’ordre **idéation → back → tests → API REST → fr
 | Documentation construite en CI, jointe aux releases avec le JAR | À implémenter ; aucune release automatique disponible |
 | Page de projet publiée | À créer et publier ; adresse cible `https://salahbekkaripro.github.io/MINDCRIME/`, non annoncée comme active |
 | Conteneurisation en v0.2.0 | Prévue ; PostgreSQL sous Compose envisagé dès v0.1.0 |
-| Attribution des commits aux comptes des étudiants | Chaque membre doit vérifier son identité Git ; emails non fournis et non vérifiés |
+| Attribution des commits aux comptes des étudiants | Contributions individuelles identifiables par le compte développeur de chaque membre |
 
 React + TypeScript reste le choix de MINDCRIME : le frontend natif du modèle n’est pas imposé. L’organisation modulaire ci-dessus est conçue pour MINDCRIME ; les technologies et contrôles restent à mettre en place. Checkstyle complète les contrôles envisagés ; il ne remplace pas les tests.
 
@@ -90,7 +90,7 @@ React + TypeScript reste le choix de MINDCRIME : le frontend natif du modèle n�
 
 | ID | Étudiant et compte développeur | Responsabilité | Algorithmes prévus |
 | --- | --- | --- | --- |
-| D1 | [Mohamed BOUGHMADI](https://github.com/boughbough) | Génération automatique des enquêtes | Génération procédurale, backtracking |
+| D1 | [Mohamed BOUGHMADI](https://github.com/MohamedBoughmadi) | Génération automatique des enquêtes | Génération procédurale, backtracking |
 | D2 | [Yacine FERDJALLAH](https://github.com/yaciiine78) | Moteur logique et contradictions | Satisfaction et propagation de contraintes |
 | D3 | [Melissa BENZIDANE](https://github.com/mbenzidane17) | Chronologies et déplacements | Graphes temporels, Dijkstra |
 | D4 | [Mohamet THIAM](https://github.com/mhtthiam11) | Comportements des personnages, moteur de jeu et interactions multijoueurs | Recherche sous contraintes, expectimax, appariement biparti |

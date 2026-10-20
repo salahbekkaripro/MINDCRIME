@@ -42,7 +42,7 @@ Le backend et ses tests sont développés en priorité, puis chaque fonctionnali
 
 ## Préparation des versions
 
-**R1 — état publié.** Le [premier commit R1 `3f51020`](https://github.com/salahbekkaripro/MINDCRIME/commit/3f510204be40aec7ed44b90e1880e4603c6a38c2) est publié sur GitHub et identifié par le tag `v0.0.1`. Le compte administrateur est `salahbekkaripro`, le collaborateur actif `yaciiine78` et les invitations restantes concernent `boughbough`, `mbenzidane17` et `mhtthiam11` lors de la vérification du 20 octobre 2026. Chaque destinataire doit accepter sa propre invitation. Les comptes et l’identité de commit devront correspondre à ceux réellement utilisés par chacun.
+**R1 — état publié.** Le [premier commit R1 `3f51020`](https://github.com/salahbekkaripro/MINDCRIME/commit/3f510204be40aec7ed44b90e1880e4603c6a38c2) est publié sur GitHub et identifié par le tag `v0.0.1`. Le compte propriétaire est `salahbekkaripro`. La capture des accès du 20 octobre 2026 indique trois collaborateurs (`MohamedBoughmadi`, `yaciiine78` et `mhtthiam11`) et une invitation en attente pour `mbenzidane17`. Chaque destinataire accepte sa propre invitation. Les contributions individuelles doivent être identifiables par les comptes développeurs déclarés.
 
 L’URL à déposer doit correspondre au **commit exact retenu** : utiliser le lien ci-dessus pour le premier état, ou le commit des corrections si celles-ci sont intégrées et retenues. Ne pas déplacer le tag initial ni réécrire son commit. Le dossier actualisé ne prétend pas que ses corrections figurent déjà dans le premier commit.
 
