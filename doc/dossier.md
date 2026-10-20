@@ -20,13 +20,13 @@ Cinq domaines complémentaires. Tous contribueront aux tests, aux revues et à l
 
 ## Positionnement et périmètre commun
 
-MINDCRIME reposera sur un moteur logique Java commun à deux modes. En mode Enquêteur, il génère des enquêtes et vérifie formellement qu’un seul coupable est déductible des indices accessibles. Des jeux d’enquête procéduraux existent déjà (Shadows of Doubt, par exemple) ; notre différence tient à cette garantie vérifiée. En mode Alibi, les rôles s’inversent : les joueurs sont les suspects et le moteur joue le détective, qui détecte les contradictions, isole les déclarations incompatibles et explique ses déductions. Le même moteur construit des mensonges cohérents et démasque ceux des humains.
+MINDCRIME reposera sur un moteur logique Java commun à deux modes. En mode Enquêteur, il génère des enquêtes et vérifie formellement qu’un seul coupable est déductible des indices accessibles. Des jeux d’enquête procéduraux existent déjà (Shadows of Doubt, par exemple). Notre différence tient à cette garantie vérifiée. En mode Alibi, les rôles s’inversent : les joueurs sont les suspects et le moteur joue le détective, qui détecte les contradictions, isole les déclarations incompatibles et explique ses déductions. Le même moteur construit des mensonges cohérents et démasque ceux des humains.
 
 ## Assistance IA · objectifs et usage documentaire R1
 
 ![Part IA par compétence](part-ia.svg)
 
-Objectifs à gauche ; usage R1 à droite (documentation seule), estimé avec Codex et relu par l’équipe. N/A ≠ 0 %. R1 étant une phase de rédaction, l’IA a produit l’essentiel du texte, d’où les dépassements ; « Validation » couvre les contrôles automatiques de mise en page, le contenu ayant été relu par l’équipe. Objectif dès v0.1.0 : rester sous les plafonds. Détails : doc/AI_USAGE.md.
+Objectifs à gauche, usage R1 à droite (documentation seule), estimé avec Codex et relu par l’équipe. N/A ≠ 0 %. R1 étant une phase de rédaction, l’IA a produit l’essentiel du texte, d’où les dépassements. « Validation » couvre les contrôles automatiques de mise en page, le contenu ayant été relu par l’équipe. Objectif dès v0.1.0 : rester sous les plafonds. Détails : doc/AI_USAGE.md.
 
 <!-- pagebreak -->
 
@@ -47,7 +47,7 @@ Le socle partagé réunira contraintes logiques, cohérence temporelle, déplace
 - **S1 — Enquêteur / D1-A.** En tant que joueur, je lance une enquête générée et vérifiée, afin de disposer d'une énigme à solution unique. Le moteur construit les données, l'API restitue l'enquête et le front affiche les indices accessibles.
 - **S2 — Alibi / D2-A.** En tant que suspect, je soumets un témoignage, afin que sa compatibilité avec les déclarations connues soit évaluée. Les déclarations et contradictions seront enregistrées et consultables par l'API et l'écran de partie.
 - **S3 — Deux modes / D3-A.** En tant que joueur ou détective moteur, je confronte un alibi aux lieux et horaires, afin d'identifier un trajet impossible. Le calcul sera exposé et visualisé dans la chronologie.
-- **S4 — Enquêteur / D4-A.** En tant que joueur, j'interroge un suspect, afin d'obtenir des réponses cohérentes avec ce qu'il sait ou prétend savoir. Le coupable ment sans contredire ses déclarations passées ni les preuves déjà révélées ; l'échange est persisté et affiché.
+- **S4 — Enquêteur / D4-A.** En tant que joueur, j'interroge un suspect, afin d'obtenir des réponses cohérentes avec ce qu'il sait ou prétend savoir. Le coupable ment sans contredire ses déclarations passées ni les preuves déjà révélées. L'échange est persisté et affiché.
 - **S5 — Deux modes / D5-A.** En tant que joueur, je consulte les hypothèses et leurs motifs d'élimination, afin de comprendre une déduction fondée sur les indices. Les résultats seront persistés, exposés par l'API et présentés dans l'interface.
 - **S6 — Alibi / D4-B.** En tant que suspect, je réponds à un détective qui choisit ses questions en anticipant mes réponses possibles, afin de défendre mon témoignage face à une stratégie d'interrogatoire calculée.
 

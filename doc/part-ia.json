@@ -85,5 +85,5 @@
     }
   ],
   "mode": "bilan",
-  "methode": "Estimations proposées avec Codex à partir de la rédaction de R1, puis relues par l’équipe ; pas de mesure exhaustive ni de comptage Git. 100 % Code concerne la saisie du générateur, pas l’origine humaine des besoins. Les axes sans activité applicable restent null et ne sont jamais représentés à 0 %."
+  "methode": "Estimations proposées avec Codex à partir de la rédaction de R1, puis relues par l’équipe. Pas de mesure exhaustive ni de comptage Git. 100 % Code concerne la saisie du générateur, pas l’origine humaine des besoins. Les axes sans activité applicable restent null et ne sont jamais représentés à 0 %."
 }
