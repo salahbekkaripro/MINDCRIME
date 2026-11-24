@@ -1,0 +1,9 @@
+{
+  "membres": [
+    {"id": "D1", "nom": "Mohamed BOUGHMADI", "github": "MohamedBoughmadi", "dossier": "D1-mohamed-boughmadi"},
+    {"id": "D2", "nom": "Yacine FERDJALLAH", "github": "yaciiine78", "dossier": "D2-yacine-ferdjallah"},
+    {"id": "D3", "nom": "Melissa BENZIDANE", "github": "mbenzidane17", "dossier": "D3-melissa-benzidane"},
+    {"id": "D4", "nom": "Mohamet THIAM", "github": "mhtthiam11", "dossier": "D4-mohamet-thiam"},
+    {"id": "D5", "nom": "Salah-Eddine BEKKARI", "github": "salahbekkaripro", "dossier": "D5-salah-eddine-bekkari"}
+  ]
+}

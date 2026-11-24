@@ -2,11 +2,12 @@
 
 Requires Python 3 and ReportLab. Supports headings, paragraphs, bold,
 bullet lists, plain URLs and tables. Explicit pagebreak comments define pages.
-Run from any directory: python3 doc/generate_pdf.py
+Run from any directory: python3 doc/outils/generate_pdf.py
 """
 
 from html import escape
 from pathlib import Path
+import argparse
 import json
 import math
 import re
@@ -25,7 +26,7 @@ from reportlab.platypus import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1] / 'equipe'
 FONT_DIR = Path('/usr/share/fonts/truetype/dejavu')
 if not FONT_DIR.is_dir():
     FONT_DIR = Path(reportlab.__file__).resolve().parent / 'fonts'
@@ -60,13 +61,35 @@ code = ParagraphStyle('DossierCode', fontName='Mono', fontSize=6.1,
 
 
 def inline(text):
+    links = []
+    codes = []
+
+    def stash_link(match):
+        links.append((match.group(1), match.group(2)))
+        return f'@@MINDCRIME_LINK_{len(links) - 1}@@'
+
+    def stash_code(match):
+        codes.append(match.group(1))
+        return f'@@MINDCRIME_CODE_{len(codes) - 1}@@'
+
+    text = re.sub(r'\[([^]]+)\]\(([^)]+)\)', stash_link, text)
+    text = re.sub(r'`([^`]+)`', stash_code, text)
     text = escape(text)
     text = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', text)
-    return re.sub(r'https://[^\s<]+', lambda m: '<link href="' + m[0] + '">' + m[0] + '</link>', text)
+    text = re.sub(r'https://[^\s<]+', lambda m: '<link href="' + m[0] + '">' + m[0] + '</link>', text)
+    for index, (label, target) in enumerate(links):
+        link = f'<link href="{escape(target, quote=True)}">{escape(label)}</link>'
+        text = text.replace(f'@@MINDCRIME_LINK_{index}@@', link)
+    for index, value in enumerate(codes):
+        text = text.replace(
+            f'@@MINDCRIME_CODE_{index}@@',
+            f'<font name="Mono">{escape(value)}</font>',
+        )
+    return text
 
 
-def radar():
-    data = json.loads((ROOT / 'part-ia.json').read_text(encoding='utf-8'))
+def radar(data_path, svg_path):
+    data = json.loads(data_path.read_text(encoding='utf-8'))
     names = ['Code', 'Tests', 'CI/CD', 'Rédaction', 'Débogage', 'Validation',
              'Algorithmique', 'Spécification', 'Conception', 'Idéation']
     axes = data['axes']
@@ -153,11 +176,11 @@ def radar():
                                textAnchor='middle', fillColor=real_color))
     drawing.add(String(width / 2, 1, 'Échelle commune : 0 à 100 % · N/A ne signifie pas 0 %',
                        fontName='Body', fontSize=6, textAnchor='middle', fillColor=muted))
-    renderSVG.drawToFile(drawing, str(ROOT / 'part-ia.svg'))
+    renderSVG.drawToFile(drawing, str(svg_path))
     return drawing
 
 
-def parse(source):
+def parse(source, data_path, svg_path):
     lines = source.splitlines()
     flow = []
     index = 0
@@ -178,7 +201,7 @@ def parse(source):
                 raise ValueError('Bloc de code Markdown non fermé.')
             flow.append(Preformatted('\n'.join(block), code))
         elif line == '![Part IA par compétence](part-ia.svg)':
-            flow.append(radar())
+            flow.append(radar(data_path, svg_path))
         elif line.startswith('# '):
             flow.append(Paragraph(inline(line[2:]), heading))
         elif line.startswith('## '):
@@ -228,11 +251,25 @@ def parse(source):
 
 
 def main():
-    source = (ROOT / 'dossier.md').read_text(encoding='utf-8')
-    if source.count('<!-- pagebreak -->') != 3:
-        raise ValueError('Le Markdown doit définir exactement quatre pages.')
-    target = ROOT / 'dossier.pdf'
-    temporary = ROOT / 'dossier.build.pdf'
+    parser = argparse.ArgumentParser(description='Génère un dossier MINDCRIME en PDF A4.')
+    parser.add_argument('--source', type=Path, default=ROOT / 'dossier.md')
+    parser.add_argument('--output', type=Path, default=ROOT / 'dossier.pdf')
+    parser.add_argument('--data', type=Path, default=ROOT / 'part-ia.json')
+    parser.add_argument('--svg', type=Path, default=ROOT / 'part-ia.svg')
+    parser.add_argument('--expected-pages', type=int, default=4,
+                        help='Nombre exact de pages, ou 0 pour un dossier de longueur libre.')
+    parser.add_argument('--label', default='DOSSIER R1  /  20 OCTOBRE 2026')
+    parser.add_argument('--title', default='MINDCRIME — Dossier de lancement R1')
+    args = parser.parse_args()
+
+    source = args.source.read_text(encoding='utf-8')
+    if args.expected_pages and source.count('<!-- pagebreak -->') != args.expected_pages - 1:
+        raise ValueError(
+            f'Le Markdown doit définir exactement {args.expected_pages} pages explicites.'
+        )
+    target = args.output
+    target.parent.mkdir(parents=True, exist_ok=True)
+    temporary = target.with_suffix('.build.pdf')
     page_count = []
 
     def footer(canvas, document):
@@ -247,27 +284,31 @@ def main():
         canvas.setFillColor(colors.white)
         canvas.drawString(42, height - 28, 'MINDCRIME')
         canvas.setFont('Body', 7)
-        canvas.drawRightString(width - 42, height - 27, 'DOSSIER R1  /  20 OCTOBRE 2026')
+        canvas.drawRightString(width - 42, height - 27, args.label)
         canvas.setStrokeColor(colors.HexColor('#dbe4ed'))
         canvas.line(42, 38, width - 42, 38)
         canvas.setFont('Body', 7)
         canvas.setFillColor(colors.HexColor('#657080'))
-        canvas.drawString(42, 25, 'MINDCRIME · M1 MIAGE Apprentissage · Dossier R1')
+        canvas.drawString(42, 25, 'MINDCRIME · M1 MIAGE Apprentissage · Documentation')
         canvas.setFillColor(colors.HexColor('#087e8b'))
         canvas.roundRect(width - 77, 15, 35, 18, 4, fill=1, stroke=0)
         canvas.setFillColor(colors.white)
         canvas.setFont('Body-Bold', 7)
-        canvas.drawCentredString(width - 59.5, 21, f'{document.page} / 4')
+        page_label = f'{document.page} / {args.expected_pages}' if args.expected_pages else str(document.page)
+        canvas.drawCentredString(width - 59.5, 21, page_label)
         canvas.restoreState()
 
     document = SimpleDocTemplate(str(temporary), pagesize=A4,
                                  rightMargin=42, leftMargin=42,
                                  topMargin=62, bottomMargin=47,
-                                 title='MINDCRIME — Dossier de lancement R1',
+                                 title=args.title,
                                  author='Équipe MINDCRIME')
-    document.build(parse(source), onFirstPage=footer, onLaterPages=footer)
-    if len(page_count) != 4:
-        raise RuntimeError(f'Conversion refusée : {len(page_count)} pages ; ajuster le Markdown ou le style. Brouillon : {temporary}')
+    document.build(parse(source, args.data, args.svg), onFirstPage=footer, onLaterPages=footer)
+    if args.expected_pages and len(page_count) != args.expected_pages:
+        raise RuntimeError(
+            f'Conversion refusée : {len(page_count)} pages au lieu de {args.expected_pages} ; '
+            f'ajuster le Markdown ou le style. Brouillon : {temporary}'
+        )
     temporary.replace(target)
     print(f'PDF généré : {target} — {len(page_count)} pages A4')
 

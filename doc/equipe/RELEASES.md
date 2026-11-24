@@ -16,7 +16,7 @@ Source des échéances : texte de CoursEnLigne transmis par l’équipe. Le [gui
 | R4 · v1.0.0 | 19 janvier 2027, 12 h 50 dans le devoir | Proof-of-concept final, fonctionnalités prévues, stabilisation et livraison |
 | R5 · transparents | 18 janvier 2027, 23 h 59 | Support de soutenance déposé la veille ; soutenance en séance le 19 janvier |
 
-**Écart à prendre en compte :** le planning général annonce 23 h 59 pour les rendus, tandis que les devoirs R2, R3 et R4 affichent 12 h 50. Pour organiser le travail, l’équipe retiendra **12 h 50, l’heure la plus tôt**, et vérifiera les échéances affichées dans les devoirs avant chaque dépôt. L’horaire général n’est pas présenté comme une prolongation de celui du devoir. Le dossier pourra dépasser quatre pages après R1 : les mises à jour R2/R3 sont sans limite de pages ; le générateur local reste actuellement réglé sur les quatre pages de R1.
+**Écart à prendre en compte :** le planning général annonce 23 h 59 pour les rendus, tandis que les devoirs R2, R3 et R4 affichent 12 h 50. Pour organiser le travail, l’équipe retiendra **12 h 50, l’heure la plus tôt**, et vérifiera les échéances affichées dans les devoirs avant chaque dépôt. L’horaire général n’est pas présenté comme une prolongation de celui du devoir. Le dossier pourra dépasser quatre pages après R1 : le contrôle de quatre pages reste propre au PDF historique R1, tandis que les dossiers de release ont une longueur libre.
 
 Coefficients : R1 **10 %**, R2 **20 %**, R3 **20 %**, R4 **25 %**, R5 **25 %**. Le travail est collectif mais l’évaluation est individualisée ; chaque membre dépose chaque rendu dans son propre espace devoir.
 

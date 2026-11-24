@@ -26,7 +26,7 @@ MINDCRIME reposera sur un moteur logique Java commun à deux modes. En mode Enqu
 
 ![Part IA par compétence](part-ia.svg)
 
-Objectifs à gauche, usage R1 à droite (documentation seule), estimé avec Codex et relu par l’équipe. N/A ≠ 0 %. R1 étant une phase de rédaction, l’IA a produit l’essentiel du texte, d’où les dépassements. « Validation » couvre les contrôles automatiques de mise en page, le contenu ayant été relu par l’équipe. Objectif dès v0.1.0 : rester sous les plafonds. Détails : doc/AI_USAGE.md.
+Objectifs à gauche, usage R1 à droite (documentation seule), estimé avec Codex et relu par l’équipe. N/A ≠ 0 %. R1 étant une phase de rédaction, l’IA a produit l’essentiel du texte, d’où les dépassements. « Validation » couvre les contrôles automatiques de mise en page, le contenu ayant été relu par l’équipe. Objectif dès v0.1.0 : rester sous les plafonds. Détails : doc/equipe/AI_USAGE.md.
 
 <!-- pagebreak -->
 
@@ -55,7 +55,7 @@ Le socle partagé réunira contraintes logiques, cohérence temporelle, déplace
 
 Les tests devront vérifier unicité avec indices accessibles, contradictions connues, conservation des scénarios compatibles, faisabilité des déplacements et transitions d'états. Des cas limites, invariants et propriétés reproductibles seront définis pour chaque algorithme ; les scénarios devront être démontrables de bout en bout.
 
-Le plan détaillé figure dans doc/PLAN_FEATURES.md. Chaque feature sera portée par une personne et traversera BD, backend, API REST et frontend ; un CRUD ou une optimisation seule ne sera pas comptabilisé comme feature majeure.
+Le plan détaillé figure dans doc/equipe/PLAN_FEATURES.md. Chaque feature sera portée par une personne et traversera BD, backend, API REST et frontend ; un CRUD ou une optimisation seule ne sera pas comptabilisé comme feature majeure.
 
 <!-- pagebreak -->
 
@@ -109,7 +109,7 @@ Le moteur ne dépendra ni de Spring, ni de JPA, ni de l’interface. Les cas d�
 
 L’entité pivot sera Partie. D1 générera des candidats ; la vérification commune combinera contraintes (D2), temps et trajets (D3), hypothèses (D5). Les comportements des suspects et du détective, ainsi que les états de partie, relèveront de D4. Une seule solution devra être déductible des indices accessibles dans le mode Enquêteur ; le mode Alibi pourra conserver plusieurs scénarios compatibles.
 
-Chaque responsable travaillera dans plusieurs classes de son domaine, avec revue croisée. Les modules évolueront entre les releases ; les versions seront conservées par Git. Docker Compose, CI, qualité et publication restent à implémenter ; seul make -C doc → doc/dossier.pdf est disponible. Licence : à définir.
+Chaque responsable travaillera dans plusieurs classes de son domaine, avec revue croisée. Les modules évolueront entre les releases ; les versions seront conservées par Git. Docker Compose, CI, qualité et publication restent à implémenter ; seul make -C doc equipe → doc/equipe/dossier.pdf est disponible. Licence : à définir.
 
 <!-- pagebreak -->
 
@@ -119,7 +119,7 @@ Chaque responsable travaillera dans plusieurs classes de son domaine, avec revue
 
 ## Trois features par étudiant — objectifs prévisionnels
 
-Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back, API REST et front, détaillés dans doc/PLAN_FEATURES.md. Stabilisation et optimisation viendront en complément.
+Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back, API REST et front, détaillés dans doc/equipe/PLAN_FEATURES.md. Stabilisation et optimisation viendront en complément.
 
 | ID | v0.1.0 — 24/11/2026 (A) | v0.2.0 — 08/12/2026 (B) | v1.0.0 — 19/01/2027 (C) |
 | --- | --- | --- | --- |
@@ -137,14 +137,14 @@ Chaque cellule désigne une nouvelle capacité utilisateur avec impacts BD, back
 
 Chaque étudiant développe les fonctionnalités de son domaine. Les cinq membres participent collectivement aux tests, aux revues de code, à la documentation, à la CI/CD et aux livraisons. Le backend et ses tests sont développés en priorité, puis chaque fonctionnalité est reliée à la base de données, à l’API REST et à l’interface.
 
-**Dépôt et versions.** Chaque membre dépose l’URL du commit exact retenu. Premier état R1 publié : 3f51020, tag v0.0.1 ; les corrections ultérieures ont leur propre commit. Commit et tag SNAPSHOT en fin de séance ; tags finaux v0.1.0, v0.2.0, v1.0.0 aux livraisons. Détails : doc/RELEASES.md. Le dossier évoluera sans limite de pages après R1.
+**Dépôt et versions.** Chaque membre dépose l’URL du commit exact retenu. Premier état R1 publié : 3f51020, tag v0.0.1 ; les corrections ultérieures ont leur propre commit. Commit et tag SNAPSHOT en fin de séance ; tags finaux v0.1.0, v0.2.0, v1.0.0 aux livraisons. Détails : doc/equipe/RELEASES.md. Le dossier évoluera sans limite de pages après R1.
 
 ## Protocole d’usage de l’IA
 
 Les étudiants apportent idées, contenus et consignes. ChatGPT, Codex et GitHub Copilot pourront aider à générer, expliquer ou corriger texte et code, y compris l’algorithmique dans le cadre autorisé. Chaque proposition sera comprise, relue, corrigée et complétée à la main si nécessaire, puis testée et validée humainement avant intégration. Chaque étudiant devra expliquer son code ; le moteur Java fonctionnera sans API d’IA obligatoire.
 
-L’usage significatif sera tracé par PR ; l’araignée déclarera la part réelle par compétence à chaque livraison, même à 0 %. Le bilan R1 est une estimation documentaire, pas une mesure du futur logiciel. La fiche pédagogique fournie interdit l’IA lors des évaluations ; les consignes applicables encadrent son usage pendant le projet. Protocole détaillé : doc/AI_USAGE.md.
+L’usage significatif sera tracé par PR ; l’araignée déclarera la part réelle par compétence à chaque livraison, même à 0 %. Le bilan R1 est une estimation documentaire, pas une mesure du futur logiciel. La fiche pédagogique fournie interdit l’IA lors des évaluations ; les consignes applicables encadrent son usage pendant le projet. Protocole détaillé : doc/equipe/AI_USAGE.md.
 
 ## Dépôt et références
 
-https://github.com/salahbekkaripro/MINDCRIME — Premier état R1 : commit 3f51020, tag v0.0.1 ; lien complet dans doc/RELEASES.md. Pour une correction retenue, déposer son commit exact. Sources : CoursEnLigne, fiche Projet 5E7MAPRO et guide https://github.com/pascalpoizat/template-projet-m1-miage . Page publiée, PDF construit en CI et joint aux releases, bilan IA par livraison restent à mettre en place.
+https://github.com/salahbekkaripro/MINDCRIME — Premier état R1 : commit 3f51020, tag v0.0.1 ; lien complet dans doc/equipe/RELEASES.md. Pour une correction retenue, déposer son commit exact. Sources : CoursEnLigne, fiche Projet 5E7MAPRO et guide https://github.com/pascalpoizat/template-projet-m1-miage . Page publiée, PDF construit en CI et joint aux releases, bilan IA par livraison restent à mettre en place.

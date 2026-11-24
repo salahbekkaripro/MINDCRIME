@@ -1,0 +1,83 @@
+{
+  "membre": {
+    "id": "D4",
+    "nom": "Mohamet THIAM",
+    "github": "mhtthiam11"
+  },
+  "version": "v0.1.0",
+  "feature": "Interroger les suspects de manière cohérente",
+  "statut": "Estimations individuelles à compléter à partir du travail réellement effectué.",
+  "axes": [
+    {
+      "nom": "Code",
+      "ia": null,
+      "objectif": 60,
+      "plafond": 70,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Tests",
+      "ia": null,
+      "objectif": 50,
+      "plafond": 60,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "CI/CD",
+      "ia": null,
+      "objectif": 60,
+      "plafond": 80,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Rédaction",
+      "ia": null,
+      "objectif": 60,
+      "plafond": 70,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Débogage",
+      "ia": null,
+      "objectif": 50,
+      "plafond": 70,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Validation",
+      "ia": null,
+      "objectif": 10,
+      "plafond": 20,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Algorithmique",
+      "ia": null,
+      "objectif": 20,
+      "plafond": 30,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Spécification",
+      "ia": null,
+      "objectif": 20,
+      "plafond": 40,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Conception",
+      "ia": null,
+      "objectif": 20,
+      "plafond": 30,
+      "justification": "À renseigner."
+    },
+    {
+      "nom": "Idéation",
+      "ia": null,
+      "objectif": 10,
+      "plafond": 30,
+      "justification": "À renseigner."
+    }
+  ],
+  "methode": "Estimation individuelle à justifier à partir des tâches réellement effectuées ; null signifie non renseigné ou non applicable, jamais 0 % par défaut."
+}

@@ -64,20 +64,20 @@ site/                         page de projet prévue
 
 Le moteur ne dépendra ni de Spring, ni de JPA, ni de l’interface. Les cas d’utilisation appelleront le moteur et les ports de stockage ; les adaptateurs JPA implémenteront ces ports. L’API appellera les cas d’utilisation et ne contiendra pas d’algorithmes métier. Des tests ArchUnit devront vérifier ces frontières. Cette séparation par ports et adaptateurs conserve les principes hexagonaux tout en organisant le code autour des besoins de MINDCRIME.
 
-L’entité pivot sera **Partie**. Le backend et ses tests seront développés en premier, puis chaque feature sera reliée à sa persistance, à son API REST et à son écran. Les packages décrivent les responsabilités, pas les étudiants ni les releases ; les versions seront conservées par Git. Voir [l’architecture détaillée](doc/ARCHITECTURE.md).
+L’entité pivot sera **Partie**. Le backend et ses tests seront développés en premier, puis chaque feature sera reliée à sa persistance, à son API REST et à son écran. Les packages décrivent les responsabilités, pas les étudiants ni les releases ; les versions seront conservées par Git. Voir [l’architecture détaillée](doc/equipe/ARCHITECTURE.md).
 
 ## Alignement sur le modèle du professeur
 
 Référence : [template-projet-m1-miage](https://github.com/pascalpoizat/template-projet-m1-miage), [guide](https://github.com/pascalpoizat/template-projet-m1-miage/blob/main/documentation.md), consultés le 20 octobre 2026 (commit `3a11a780f5912bb3876e7ed7902b5cd8f377eb8e`). Le modèle, ses outils et son `CLAUDE.md` sont facultatifs ; les règles du cours sont distinguées dans le guide.
 
-Chaque étudiant doit porter **une feature par itération**, avec un effet sur **BD, backend, API REST et frontend**, et un algorithme non trivial identifié. Un CRUD, une optimisation seule ou une stabilisation ne suffit pas. Le [plan détaillé](doc/PLAN_FEATURES.md) propose quinze features, dont celles de v1.0.0 ; ces fonctionnalités sont prévisionnelles.
+Chaque étudiant doit porter **une feature par itération**, avec un effet sur **BD, backend, API REST et frontend**, et un algorithme non trivial identifié. Un CRUD, une optimisation seule ou une stabilisation ne suffit pas. Le [plan détaillé](doc/equipe/PLAN_FEATURES.md) propose quinze features, dont celles de v1.0.0 ; ces fonctionnalités sont prévisionnelles.
 
-La démarche suivra l’ordre **idéation → back → tests → API REST → front**, avec validation de chaque étape avant la suivante. Chaque fiche précisera complexité, invariants, cas limites, alternatives, impacts des quatre couches et critères d’acceptation. Voir le [modèle de fiche](doc/features/MODELE-feature.md) et les [règles de contribution](CONTRIBUTING.md).
+La démarche suivra l’ordre **idéation → back → tests → API REST → front**, avec validation de chaque étape avant la suivante. Chaque fiche précisera complexité, invariants, cas limites, alternatives, impacts des quatre couches et critères d’acceptation. Voir le [modèle de fiche](doc/modeles/feature.md), l'[organisation documentaire](doc/README.md) et les [règles de contribution](CONTRIBUTING.md).
 
 | Attente du cours | État local et suite prévue |
 | --- | --- |
 | Dossier Markdown/PDF, construction `make -C doc` | Disponible et vérifié localement ; quatre pages A4 |
-| Araignée IA, dix axes, dans le dossier et par livraison | Générée depuis `doc/part-ia.json` ; objectifs prévisionnels, plafonds et bilan documentaire R1 estimé affichés séparément |
+| Araignée IA, dix axes, dans le dossier et par livraison | Bilan R1 dans `doc/equipe/part-ia.json` ; bilan individuel dans chaque `doc/membres/<membre>/part-ia.json` ; assemblage par release |
 | CI, couverture et qualité | À implémenter ; aucun résultat annoncé |
 | Documentation construite en CI, jointe aux releases avec le JAR | À implémenter ; aucune release automatique disponible |
 | Page de projet publiée | À créer et publier ; adresse cible `https://salahbekkaripro.github.io/MINDCRIME/`, non annoncée comme active |
@@ -107,7 +107,7 @@ Les cinq membres participeront également aux tests, aux revues de code et à l'
 | v0.2.0 | 8 décembre 2026 | Amélioration algorithmique, nouvelles fonctionnalités et conteneurisation ; une nouvelle fonctionnalité majeure identifiable par étudiant |
 | v1.0.0 | 19 janvier 2027 | Troisième feature algorithmique par étudiant, stabilisation et soutenance |
 
-Le [planning détaillé des livraisons](doc/RELEASES.md) précise les fonctionnalités de chacun, les tâches collectives et les critères de chaque version. Nous préparons actuellement **R1**, version initiale **0.0.1** ; aucune release future n’est créée.
+Le [planning détaillé des livraisons](doc/equipe/RELEASES.md) précise les fonctionnalités de chacun, les tâches collectives et les critères de chaque version. Le dossier R1 reste archivé dans `doc/equipe/` ; les livraisons suivantes sont assemblées dans `doc/releases/` après intégration.
 
 R1 et les identifiants développeurs sont dus le **20 octobre 2026 à 23 h 59**. Les devoirs R2, R3 et R4 affichent **12 h 50**, alors que le planning général mentionne 23 h 59 : l’équipe prévoit de déposer à l’heure la plus tôt et vérifiera les horaires des devoirs. Étape intermédiaire le **1er décembre 2026** ; transparents le **18 janvier 2027 à 23 h 59**, soutenance en séance le 19 janvier.
 
@@ -122,11 +122,11 @@ Il n'existe pas encore d'instructions d'installation applicative : aucun backend
 Pour régénérer uniquement le dossier PDF, utiliser Python 3 et ReportLab (déjà disponible dans l'environnement de rédaction) :
 
 ```bash
-make -C doc
-pdfinfo doc/dossier.pdf
+make -C doc equipe
+pdfinfo doc/equipe/dossier.pdf
 ```
 
-Le contrat du modèle est respecté : `make -C doc` compile la source unique `doc/dossier.md` en `doc/dossier.pdf`, régénère l’araignée et refuse une sortie qui ne contient pas exactement quatre pages A4. Python 3, ReportLab et GNU Make sont nécessaires. Le générateur utilise DejaVu Sans si disponible, sinon les polices Vera fournies avec ReportLab. Sur un autre environnement, la dépendance Python `reportlab` peut être installée dans un environnement virtuel. `pdfinfo` permet de vérifier indépendamment le résultat.
+Pour R1, `make -C doc equipe` compile `doc/equipe/dossier.md` en `doc/equipe/dossier.pdf`, régénère l’araignée et refuse une sortie qui ne contient pas exactement quatre pages A4. Après l'intégration des branches, `make -C doc release VERSION=vX.Y.Z` assemble les documents communs et individuels dans un dossier de release sans écraser une version existante. Python 3, ReportLab et GNU Make sont nécessaires.
 
 ## Mise en place et attendus du rendu R1
 
@@ -134,16 +134,16 @@ Le dossier couvre l’équipe de cinq étudiants et ses comptes développeurs, l
 
 La fiche pédagogique « Projet » **5E7MAPRO**, année **2026-2027**, transmise par l’équipe, vise un proof-of-concept livré en v1.0.0, un travail itératif, une architecture structurée, une chaîne CI/CD et une évaluation individuelle au sein du groupe. Son descriptif prévoit une autorisation possible de l’IA selon les règles du cours ; sa rubrique évaluation **interdit l’IA lors des évaluations**. Le protocole proposé ne vaut pas dérogation : les consignes propres à chaque livrable évalué encadrent l’assistance autorisée.
 
-Le détail de la mise en place prévue et des responsabilités figure dans [ARCHITECTURE.md](doc/ARCHITECTURE.md). Deux graphiques présentent séparément les objectifs prévisionnels avec leurs plafonds et l’usage documentaire R1 estimé pour la rédaction de R1 ; un tableau rassemble les pourcentages. Le bilan est limité aux documents et au générateur PDF, sans code applicatif ; les axes sans activité sont N/A et les dépassements sont expliqués dans le protocole IA. Après chaque feature et à chaque livraison, l’équipe mettra les données à jour ; `make -C doc` régénérera le graphique et le PDF. Les pourcentages ne sont pas calculés automatiquement.
+Le détail de la mise en place prévue et des responsabilités figure dans [ARCHITECTURE.md](doc/equipe/ARCHITECTURE.md). Le bilan collectif historique de R1 reste séparé des bilans individuels. Après chaque feature, le membre concerné met à jour son JSON avec des estimations justifiées ; les axes sans activité restent N/A. Lors d'une release, les cinq JSON sont copiés sans calculer de moyenne globale trompeuse.
 
 ## Documentation et protocole IA
 
-- [Dossier de lancement R1 — Markdown](doc/dossier.md)
-- [Dossier de lancement R1 — PDF A4, quatre pages](doc/dossier.pdf)
-- [Protocole d'utilisation de l'IA](doc/AI_USAGE.md)
-- [Plan des quinze features et impacts sur les quatre couches](doc/PLAN_FEATURES.md)
-- [Livraisons, échéances et responsabilités](doc/RELEASES.md)
-- [Araignée IA — données](doc/part-ia.json) et [graphique](doc/part-ia.svg)
+- [Organisation de la documentation](doc/README.md)
+- [Dossier collectif R1 — Markdown](doc/equipe/dossier.md) et [PDF A4](doc/equipe/dossier.pdf)
+- [Protocole d'utilisation de l'IA](doc/equipe/AI_USAGE.md)
+- [Plan des quinze features](doc/equipe/PLAN_FEATURES.md)
+- [Livraisons, échéances et responsabilités](doc/equipe/RELEASES.md)
+- [Espaces individuels](doc/membres) et [modèles](doc/modeles)
 
 **Développement assisté par IA avec conception, revue et validation humaines systématiques.** Le guide autorise l’IA sans l’imposer. ChatGPT, Codex et GitHub Copilot sont envisagés pour proposer des solutions, générer du texte ou du code, aider au débogage et suggérer des tests. Les étudiants fournissent les idées, les contenus et les consignes, puis pilotent la génération. Ils relisent chaque proposition, corrigent, optimisent et peuvent coder des parties à la main. L’IA pourra aussi aider à concevoir et implémenter les algorithmes dans le périmètre autorisé ; les étudiants devront en maîtriser le fonctionnement, la complexité et les limites. Chaque contribution devra être comprise, revue, testée puis validée par des humains ; les usages significatifs seront documentés. Chaque étudiant devra pouvoir expliquer son code. Les algorithmes métier devront fonctionner en Java sans dépendance obligatoire à une API d'IA.
 

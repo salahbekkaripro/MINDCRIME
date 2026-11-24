@@ -31,4 +31,4 @@ Relecteur et validation de conception : <à renseigner avant développement>.
 
 ## Bilan à compléter après réalisation
 
-Consigner uniquement les fichiers, commandes, résultats de tests, démonstrations et limites effectivement constatés. Décrire l'usage IA, les éléments repris/modifiés/rejetés et l'estimation par compétence (les dix axes de `doc/part-ia.json`), avec une araignée et les plafonds alors validés. Aucun pourcentage du projet ne doit être recopié sans évaluation de cette feature.
+Consigner uniquement les fichiers, commandes, résultats de tests, démonstrations et limites effectivement constatés. Décrire l'usage IA, les éléments repris/modifiés/rejetés et l'estimation par compétence (les dix axes du `part-ia.json` du membre), avec une araignée et les plafonds alors validés. Aucun pourcentage du projet ne doit être recopié sans évaluation de cette feature.
