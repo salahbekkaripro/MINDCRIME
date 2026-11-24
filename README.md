@@ -9,7 +9,7 @@
 Projet universitaire **M1 MIAGE Apprentissage — Université Paris Nanterre**.
 Version initiale : **0.0.1**. Dépôt : [salahbekkaripro/MINDCRIME](https://github.com/salahbekkaripro/MINDCRIME).
 
-MINDCRIME est un projet de jeu d'enquête interactif reposant sur un moteur de raisonnement algorithmique en Java. Au lancement R1, le dépôt contient la documentation de conception ; les fonctionnalités, technologies et livraisons ci-dessous constituent des objectifs prévisionnels. Aucune application, suite de tests ou chaîne CI/CD n'est encore implémentée.
+MINDCRIME est un projet de jeu d'enquête interactif reposant sur un moteur de raisonnement algorithmique en Java. Au lancement R1, le dépôt contenait la documentation de conception. Le parcours D2 est maintenant démontrable localement : [interface React/TypeScript](frontend/README.md), API REST Spring Boot, moteur Java pur et stockage H2 sur disque, avec un [profil PostgreSQL à tester](backend/README.md). Les deux modes complets, l'intégration des domaines et la CI restent à réaliser ; les technologies et livraisons ci-dessous décrivent leur cible.
 
 ## Deux modes de jeu prévus
 
@@ -117,7 +117,7 @@ Coefficients : R1 10 %, R2 20 %, R3 20 %, R4 25 %, R5 25 %. Le dossier est limit
 
 ## Installation et exécution
 
-Il n'existe pas encore d'instructions d'installation applicative : aucun backend, frontend, manifeste de dépendances ou fichier Docker Compose n'est présent au lancement. Les commandes de lancement et de test seront documentées lors de leur implémentation.
+Le [README backend](backend/README.md) décrit les prérequis JDK/Node, la construction du frontend, la commande Maven Wrapper `verify` et le lancement du JAR serveur D2. Après démarrage depuis la racine, ouvrir `http://127.0.0.1:8080/` avec le compte local de démonstration `demo / mindcrime-demo`. Les témoignages sont conservés sous `.data/`, ignoré par Git. L'API et l'écran fonctionnent avec des référentiels fictifs provisoires ; ils ne constituent pas encore un jeu complet ni l'intégration des modules D1/D3/D4/D5. Aucun fichier Docker Compose n'est implémenté.
 
 Pour régénérer uniquement le dossier PDF, utiliser Python 3 et ReportLab (déjà disponible dans l'environnement de rédaction) :
 

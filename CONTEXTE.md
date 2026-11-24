@@ -53,7 +53,7 @@ backend/src/main/java/fr/miage/mindcrime/
 │   ├── agents/                  D4
 │   └── deduction/               D5
 └── infrastructure/              persistance et configuration Spring
-frontend/                        interface prévue, non implémentée
+frontend/                        écran React/TypeScript D2 ; autres parcours à intégrer
 doc/                             conception, dossier et suivi des livraisons
 ```
 
@@ -66,7 +66,7 @@ REST est prévu sous `/api/v1`, avec OpenAPI et erreurs `problem+json`. WebSocke
 - Le premier dossier R1 est publié au commit `3f51020`, tagué `v0.0.1`. Ne pas modifier ce tag ou réécrire ce commit.
 - Le dossier R1 historique est [doc/equipe/dossier.md](doc/equipe/dossier.md), compilé en [doc/equipe/dossier.pdf](doc/equipe/dossier.pdf), de quatre pages A4. Les contributions courantes sont séparées dans `doc/membres/` et seront assemblées sous `doc/releases/<version>/` après intégration.
 - Un **socle backend non web** est préparé sur la branche D5 : Java 21, Spring Boot 4.0.8, Maven Wrapper 3.3.4 utilisant Maven 3.9.11. Il compile, produit un JAR et initialise le contexte Spring ; il ne fournit pas encore de serveur REST ou de partie jouable.
-- Il n'existe pas encore de moteur métier implémenté, de frontend, de persistance ou de suite de tests applicatifs dans cette copie lors de la rédaction.
+- Les sources fournissent désormais le parcours D2 : moteur de contradictions Java pur, cas d'utilisation, stockage JDBC, migrations Flyway, API REST Spring Boot et écran React/TypeScript. Le profil local utilise H2 sur disque ; PostgreSQL reste un profil à tester réellement. Le compte et les référentiels de démonstration sont des adaptateurs provisoires, pas le travail de D1 ou D4. La cible Java reste 21 ; les types et le numéro de migration D2 ne sont pas des contrats communs approuvés. Voir `backend/README.md` et la fiche F2 de D2 pour les commandes, résultats vérifiés et limites.
 - La fiche D5-A, lorsqu'elle est présente sur une branche de travail, appartient à `doc/membres/D5-salah-eddine-bekkari/features/`. Sa revue par un autre membre ne doit pas être déclarée effectuée sans preuve. Les fiches des autres domaines appartiennent aux dossiers de leurs membres.
 - Les ajouts présents dans un répertoire de travail ne sont pas nécessairement commités, publiés ou disponibles sur les branches des autres membres. Toujours vérifier.
 
@@ -78,12 +78,12 @@ Depuis la racine, avec `JAVA_HOME` pointant sur un JDK 21 :
 
 ```bash
 ./backend/mvnw -f backend/pom.xml verify
-"$JAVA_HOME/bin/java" -jar backend/target/mindcrime-backend-0.0.1.jar
+"$JAVA_HOME/bin/java" -jar backend/target/mindcrime-backend-0.1.0-SNAPSHOT.jar
 make -C doc equipe
 pdfinfo doc/equipe/dossier.pdf
 ```
 
-Le JDK de la session initiale est dans `.tools/jdk-21`, ignoré par Git : sa présence n'est pas garantie chez les autres membres. Ne pas copier un chemin absolu personnel dans les commandes communes. Voir `backend/README.md` lorsqu’il est disponible sur la branche de travail pour les variantes et le cache local. La commande `verify` a réussi pour le socle, mais signalait **aucun test à exécuter** ; cela ne valide aucune feature.
+Le JDK de la session initiale était dans `.tools/jdk-21`, ignoré par Git : sa présence n'est pas garantie chez les autres membres. Ne pas copier un chemin absolu personnel dans les commandes communes. Construire le frontend avant le JAR pour y embarquer l'écran ; voir `backend/README.md` pour les commandes Windows/POSIX, les JDK compatibles et les limites. Le JAR actuel démarre le serveur et le parcours D2 local. L'ancien build du socle sans tests ne validait aucune feature ; les vérifications réelles sont consignées dans le dossier D2, sans annoncer un jeu multijoueur complet.
 
 ## Versions et rendus
 

@@ -6,70 +6,70 @@
   },
   "version": "v0.1.0",
   "feature": "Détecter les contradictions de témoignages",
-  "statut": "Estimations individuelles à compléter à partir du travail réellement effectué.",
+  "statut": "Parcours D2 local implémenté avec Codex à la demande de Yacine : moteur, persistance JDBC/H2, migration, API REST et interface React/TypeScript. Étape 6 : build frontend, 56 tests Java, parcours Edge et redémarrage vérifiés le 24 novembre 2026. PostgreSQL, accords d'équipe, revue humaine et estimations quantitatives restent à renseigner.",
   "axes": [
     {
       "nom": "Code",
       "ia": null,
       "objectif": 60,
       "plafond": 70,
-      "justification": "À renseigner."
+      "justification": "Yacine a demandé les étapes du parcours et leurs contraintes. Codex a généré le moteur, les cas d'utilisation, les adaptateurs provisoires, puis le SQL, JDBC, les contrôleurs/DTO et l'écran React/TypeScript. Le Wrapper est repris d'Apache et les bibliothèques sont des dépendances externes. Aucune saisie manuelle humaine de ces sources n'est attestée ; estimation quantitative finale non renseignée."
     },
     {
       "nom": "Tests",
       "ia": null,
       "objectif": 50,
       "plafond": 60,
-      "justification": "À renseigner."
+      "justification": "Yacine a retenu les cas et demandé leur validation, puis le parcours complet. Codex a généré, complété et exécuté les tests : 43 à l'étape 5, puis 56 après ajout des tests HTTP, visibilité, concurrence, rollback et base fichier. Les 2 801 séquences et les 120 permutations restent chacune dans un seul test JUnit. Aucune couverture chiffrée ni revue humaine des tests n'est inventée ; bilan quantitatif non renseigné."
     },
     {
       "nom": "CI/CD",
       "ia": null,
       "objectif": 60,
       "plafond": 80,
-      "justification": "À renseigner."
+      "justification": "Aucun workflow distant créé ou exécuté. Le build Maven local avec Wrapper n'est pas présenté comme une CI ; axe non estimé."
     },
     {
       "nom": "Rédaction",
       "ia": null,
       "objectif": 60,
       "plafond": 70,
-      "justification": "À renseigner."
+      "justification": "Yacine a piloté les étapes et demandé les contenus attendus pour D2. Codex a rédigé la fiche, le dossier, les README et les états communs affectés, jusqu'aux résultats et limites de l'étape 6. Reprises et corrections manuelles encore à renseigner ; pourcentage non estimé."
     },
     {
       "nom": "Débogage",
       "ia": null,
       "objectif": 50,
       "plafond": 70,
-      "justification": "À renseigner."
+      "justification": "Codex a corrigé le Wrapper Windows, le groupe du plugin Spring Boot, l'encodage BCrypt et le renouvellement CSRF sous Basic stateless, après échecs réellement observés. Il a utilisé les certificats publics Windows par options de processus pour Maven et npm, sans désactiver TLS ni modifier les profils ou Java système. Estimation quantitative finale non renseignée."
     },
     {
       "nom": "Validation",
       "ia": null,
       "objectif": 10,
       "plafond": 20,
-      "justification": "À renseigner."
+      "justification": "À la demande de Yacine, Codex a exécuté les builds frontend/Maven, les 56 tests, les saisies de deux présences incompatibles dans Edge et la comparaison des données après redémarrage. JDK 23.0.2 avec cible Java 21 et Node 22.13.1 ; runtime 21 exact et PostgreSQL non testés. Aucune revue humaine ou intégration complète aux cinq domaines attestée ; pourcentage non estimé."
     },
     {
       "nom": "Algorithmique",
       "ia": null,
       "objectif": 20,
       "plafond": 30,
-      "justification": "À renseigner."
+      "justification": "Yacine a demandé de poursuivre la réduction des domaines et d'en détailler structures, sources, ordre et coûts, puis d'implémenter le moteur. Codex a proposé, expliqué et implémenté l'algorithme unaire indexé et ses justifications. Aucune adaptation manuelle humaine attestée ; compréhension humaine et estimation finale à renseigner."
     },
     {
       "nom": "Spécification",
       "ia": null,
       "objectif": 20,
       "plafond": 40,
-      "justification": "À renseigner."
+      "justification": "Yacine a retenu et transmis dans les échanges le périmètre présence/absence et les six cas principaux pour sa partie D2, puis demandé leur formalisation. Codex a structuré ces éléments, explicité les limites et proposé les cas complémentaires. Ce pilotage ne transforme pas les propositions générées en rédaction manuelle humaine ; estimation finale à effectuer."
     },
     {
       "nom": "Conception",
       "ia": null,
       "objectif": 20,
       "plafond": 30,
-      "justification": "À renseigner."
+      "justification": "À partir des étapes demandées par Yacine, Codex a proposé puis réalisé les contrats locaux, le stockage transactionnel, le recalcul des contradictions, la visibilité et sa révision, les ressources REST et le parcours frontend. Référentiels et compte provisoires ; accords des autres membres et numéro de migration non coordonnés. Revue technique par le même assistant, sans validation humaine inventée ; pourcentage non estimé."
     },
     {
       "nom": "Idéation",

@@ -1,0 +1,9 @@
+.tools/
+**/target/
+*.class
+.idea/
+*.iml
+.data/
+**/node_modules/
+frontend/dist/
+*.tsbuildinfo

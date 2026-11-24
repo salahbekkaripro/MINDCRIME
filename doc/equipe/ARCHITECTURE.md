@@ -1,6 +1,6 @@
 # Architecture MINDCRIME
 
-Cette documentation décrit l’architecture prévue du projet. Le dépôt contient la documentation et son outillage PDF ; aucun backend, frontend, schéma de base de données ou test applicatif n’est encore implémenté.
+Cette documentation décrit l’architecture cible du projet. Le parcours D2 dispose désormais d'un moteur Java pur, de cas d'utilisation, d'un adaptateur JDBC transactionnel, d'une migration Flyway, d'une API REST Spring Boot et d'un écran React/TypeScript. La démonstration locale utilise H2 sur disque ; le profil PostgreSQL n'a pas encore été exécuté sur une instance réelle. Le [README backend](../../backend/README.md) précise les commandes et limites. Les référentiels et le compte local sont provisoires ; le modèle commun reste à convenir avec l'équipe. L'adaptateur JDBC D2 peut être remplacé par JPA via ses ports, sans modifier le moteur.
 
 ## Vue d’ensemble
 
