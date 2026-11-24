@@ -64,10 +64,10 @@ REST est prévu sous `/api/v1`, avec OpenAPI et erreurs `problem+json`. WebSocke
 ## État au moment de la rédaction
 
 - Le premier dossier R1 est publié au commit `3f51020`, tagué `v0.0.1`. Ne pas modifier ce tag ou réécrire ce commit.
-- Le dossier courant est [doc/dossier.md](doc/dossier.md), compilé en un seul [doc/dossier.pdf](doc/dossier.pdf), de quatre pages A4 pour R1. Il constitue un état documentaire de lancement.
+- Le dossier R1 historique est [doc/equipe/dossier.md](doc/equipe/dossier.md), compilé en [doc/equipe/dossier.pdf](doc/equipe/dossier.pdf), de quatre pages A4. Les contributions courantes sont séparées dans `doc/membres/` et seront assemblées sous `doc/releases/<version>/` après intégration.
 - Un **socle backend non web** est préparé sur la branche D5 : Java 21, Spring Boot 4.0.8, Maven Wrapper 3.3.4 utilisant Maven 3.9.11. Il compile, produit un JAR et initialise le contexte Spring ; il ne fournit pas encore de serveur REST ou de partie jouable.
 - Il n'existe pas encore de moteur métier implémenté, de frontend, de persistance ou de suite de tests applicatifs dans cette copie lors de la rédaction.
-- La fiche D5-A (`doc/features/v0.1.0-F5-hypotheses-expliquees.md`, préparée localement sur la branche D5) est préparée. Sa revue par un autre membre n'est pas déclarée effectuée. Les fiches des autres domaines restent à rechercher ou à préparer pour leurs propres sessions.
+- La fiche D5-A, lorsqu'elle est présente sur une branche de travail, appartient à `doc/membres/D5-salah-eddine-bekkari/features/`. Sa revue par un autre membre ne doit pas être déclarée effectuée sans preuve. Les fiches des autres domaines appartiennent aux dossiers de leurs membres.
 - Les ajouts présents dans un répertoire de travail ne sont pas nécessairement commités, publiés ou disponibles sur les branches des autres membres. Toujours vérifier.
 
 Les réglages GitHub et invitations peuvent évoluer indépendamment du code. Ils ne se déduisent pas de ce fichier : ne pas affirmer leur état sans vérification si la tâche porte dessus.
@@ -79,8 +79,8 @@ Depuis la racine, avec `JAVA_HOME` pointant sur un JDK 21 :
 ```bash
 ./backend/mvnw -f backend/pom.xml verify
 "$JAVA_HOME/bin/java" -jar backend/target/mindcrime-backend-0.0.1.jar
-make -C doc
-pdfinfo doc/dossier.pdf
+make -C doc equipe
+pdfinfo doc/equipe/dossier.pdf
 ```
 
 Le JDK de la session initiale est dans `.tools/jdk-21`, ignoré par Git : sa présence n'est pas garantie chez les autres membres. Ne pas copier un chemin absolu personnel dans les commandes communes. Voir `backend/README.md` lorsqu’il est disponible sur la branche de travail pour les variantes et le cache local. La commande `verify` a réussi pour le socle, mais signalait **aucun test à exécuter** ; cela ne valide aucune feature.
@@ -95,13 +95,13 @@ Le JDK de la session initiale est dans `.tools/jdk-21`, ignoré par Git : sa pr�
 | v1.0.0 / R4 | 19 janvier 2027 | Fonctionnalités finales prévues, stabilisation et proof-of-concept |
 | R5 | 19 janvier 2027 | Soutenance ; transparents le 18 janvier à 23 h 59 |
 
-Le point intermédiaire est le 1er décembre. R1 est dû à 23 h 59 ; les devoirs R2–R4 affichent 12 h 50 malgré un planning général à 23 h 59. Prévoir le dépôt à l'heure la plus tôt et consulter le devoir. Chaque membre dépose individuellement l'URL du commit exact retenu. Voir [doc/RELEASES.md](doc/RELEASES.md) pour les détails et [doc/PLAN_FEATURES.md](doc/PLAN_FEATURES.md) pour les quinze objectifs prévisionnels.
+Le point intermédiaire est le 1er décembre. R1 est dû à 23 h 59 ; les devoirs R2–R4 affichent 12 h 50 malgré un planning général à 23 h 59. Prévoir le dépôt à l'heure la plus tôt et consulter le devoir. Chaque membre dépose individuellement l'URL du commit exact retenu. Voir [doc/equipe/RELEASES.md](doc/equipe/RELEASES.md) pour les détails et [doc/equipe/PLAN_FEATURES.md](doc/equipe/PLAN_FEATURES.md) pour les quinze objectifs prévisionnels.
 
 ## Assistance IA et limites pédagogiques
 
 Les étudiants fournissent idées, contenus, consignes et décisions. L'IA peut expliquer, générer et aider à corriger du texte ou du code, y compris l'algorithmique dans le cadre autorisé. Les étudiants relisent, comprennent, corrigent, optimisent et complètent manuellement ; ils doivent pouvoir expliquer leur travail sans aide.
 
-Le protocole détaillé est [doc/AI_USAGE.md](doc/AI_USAGE.md). La fiche pédagogique fournie interdit l'IA lors des évaluations ; les consignes de l'enseignant encadrent les usages pendant le projet. Les objectifs d'assistance et les estimations du bilan documentaire R1 sont distincts ; ne pas les recopier comme bilan d'une feature ou d'un autre utilisateur.
+Le protocole détaillé est [doc/equipe/AI_USAGE.md](doc/equipe/AI_USAGE.md). La fiche pédagogique fournie interdit l'IA lors des évaluations ; les consignes de l'enseignant encadrent les usages pendant le projet. Les objectifs d'assistance et les estimations du bilan documentaire R1 sont distincts ; chaque membre renseigne son propre bilan dans `doc/membres/<membre>/part-ia.json`.
 
 ## Mise à jour de ce contexte
 

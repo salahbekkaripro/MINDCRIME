@@ -42,9 +42,9 @@ La démarche de chaque feature reste idéation → back → tests → API REST �
 
 ## Traçabilité et araignée par compétence
 
-Chaque usage significatif sera documenté dans la fiche de feature ou la PR : auteur humain, outil, objectif et consignes, éléments générés, repris, modifiés ou rejetés, contributions manuelles, relecteur, commandes et résultats réellement observés. Aucun secret ne devra être transmis à l'IA, aucune identité empruntée pour les commits, et une génération IA ne sera pas présentée comme une saisie intégralement humaine.
+Chaque usage significatif sera documenté dans la fiche de feature ou la PR et dans le bilan du membre concerné : auteur humain, outil, objectif et consignes, éléments générés, repris, modifiés ou rejetés, contributions manuelles, relecteur, commandes et résultats réellement observés. Aucun secret ne devra être transmis à l'IA, aucune identité empruntée pour les commits, et une génération IA ne sera pas présentée comme une saisie intégralement humaine.
 
-Les dix axes du modèle sont conservés dans [part-ia.json](part-ia.json) et l'[araignée](part-ia.svg) : Code, Tests, CI/CD, Rédaction, Débogage, Validation, Algorithmique, Spécification, Conception, Idéation. Les rôles humains et la génération automatique doivent être distingués : fournir des consignes et relire ne donne pas automatiquement un pourcentage de lignes humaines, et générer un texte ne signifie pas que l'IA a inventé le sujet ou décidé du contenu.
+Les dix axes du modèle sont conservés dans chaque `doc/membres/<membre>/part-ia.json` : Code, Tests, CI/CD, Rédaction, Débogage, Validation, Algorithmique, Spécification, Conception, Idéation. Le [JSON](part-ia.json) et l'[araignée](part-ia.svg) placés ici restent le bilan collectif historique de R1. Les rôles humains et la génération automatique doivent être distingués : fournir des consignes et relire ne donne pas automatiquement un pourcentage de lignes humaines, et générer un texte ne signifie pas que l'IA a inventé le sujet ou décidé du contenu.
 
 ## Objectifs prévisionnels de développement
 
@@ -90,13 +90,13 @@ Le bilan dépasse les plafonds prévisionnels sur Code, Rédaction, Validation, 
 
 ## Mise à jour du graphique
 
-Dans `part-ia.json`, `objectif` contient la part IA envisagée, `plafond` sa limite prévisionnelle et `ia` la part constatée ou estimée dans le périmètre déclaré. Chaque axe possède une justification. `null` signifie non applicable ou non renseigné, jamais 0 %. Un 0 % devra être renseigné explicitement lorsque l’activité aura été réalisée sans IA.
+Dans chaque `part-ia.json`, `objectif` contient la part IA envisagée, `plafond` sa limite prévisionnelle et `ia` la part constatée ou estimée dans le périmètre déclaré. Chaque axe possède une justification. `null` signifie non applicable ou non renseigné, jamais 0 %. Un 0 % devra être renseigné explicitement lorsque l’activité aura été réalisée sans IA.
 
 Le mode `bilan` présente deux graphiques côte à côte : les objectifs violets et plafonds verts pointillés à gauche, le bilan documentaire orange à droite. Les dix axes restent identiques, à la même échelle. Les noms des compétences figurent seuls autour des graphiques ; le tableau placé en dessous indique les pourcentages. Chaque valeur R1 applicable est un point orange relié au centre par son rayon : les axes N/A n’ont aucun point réel, aucun zéro fictif ni polygone reliant des valeurs manquantes.
 
 Les quatre axes N/A (Tests, CI/CD, Débogage, Algorithmique) restent visibles pour conserver les dix compétences communes. Le graphique ne présente pas le bilan documentaire et les objectifs de développement comme des mesures d’un même périmètre. Le mode `previsionnel` masque les marqueurs du bilan ; les valeurs restent documentées dans le JSON.
 
-Après chaque feature et à chaque livraison, l’équipe mettra les parts constatées à jour à partir des contributions et PR, avec périmètre, méthode, limites et écarts. Les objectifs et plafonds pourront évoluer avec justification ; Git conservera les états après enregistrement des commits. Le mode `previsionnel` permet de montrer seulement les objectifs si nécessaire.
+Après chaque feature, son responsable mettra ses parts constatées à jour à partir de sa contribution et de sa PR, avec périmètre, méthode, limites et écarts. Après fusion, l'outil de release copiera les cinq bilans sans fabriquer de moyenne globale. Les objectifs et plafonds pourront évoluer avec justification ; Git conservera les états après enregistrement des commits.
 
 `make -C doc` relit les données et régénère le SVG et l’unique PDF. La commande ne calcule aucun pourcentage à partir du code ou des prompts. Les objectifs ne remplacent pas les bilans réels demandés par le cours.
 

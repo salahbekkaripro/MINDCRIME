@@ -28,7 +28,7 @@ Ne pas attribuer individuellement la CI, Docker, les tests ou la documentation s
 
 ## Concevoir et expliquer avant de développer
 
-- Pour une nouvelle feature, préparer la fiche `doc/features/<version>-F<n>-<nom>.md` à partir du modèle. Décrire besoin, algorithme nommé, complexité, alternatives, invariants, cas limites, contrats, quatre couches et critères d'acceptation.
+- Pour une nouvelle feature, préparer la fiche `doc/membres/<membre>/features/<version>-F<n>-<nom>.md` à partir de `doc/modeles/feature.md`. Décrire besoin, algorithme nommé, complexité, alternatives, invariants, cas limites, contrats, quatre couches et critères d'acceptation.
 - Respecter la démarche de contribution : idéation avec relecture par un autre membre → backend → tests → API REST → frontend. Ne pas déclarer une étape ou une revue humaine accomplie sans preuve.
 - Si une étape dépend d'une revue non effectuée, indiquer précisément la règle et le travail restant ; avancer sur les préparatifs indépendants sans simuler la revue ni réécrire la règle pour l'éviter.
 - Expliquer les décisions et le fonctionnement des algorithmes avec des exemples concrets. L'aide IA peut comprendre du code dans le périmètre autorisé, sans se substituer à la compréhension de l'étudiant.
@@ -36,7 +36,7 @@ Ne pas attribuer individuellement la CI, Docker, les tests ou la documentation s
 
 ## Architecture et code
 
-- Utiliser l'architecture MINDCRIME définie dans [doc/ARCHITECTURE.md](doc/ARCHITECTURE.md), pas recopier automatiquement le template du professeur.
+- Utiliser l'architecture MINDCRIME définie dans [doc/equipe/ARCHITECTURE.md](doc/equipe/ARCHITECTURE.md), pas recopier automatiquement le template du professeur.
 - Garder le moteur en Java pur : pas de Spring, JPA, contrôleur ou appel d'IA dans les algorithmes métier.
 - Séparer API/DTO, cas d'utilisation et ports, moteur, persistance et configuration. Le frontend consomme l'API et affiche les données ; il ne calcule pas la solution du jeu.
 - Conserver un modèle commun autour de Partie et des contrats explicites entre domaines. Éviter les dépendances circulaires et le couplage direct aux tables d'un autre domaine.
@@ -57,11 +57,11 @@ Ne pas attribuer individuellement la CI, Docker, les tests ou la documentation s
 ## Documentation et traçabilité IA
 
 - Mettre à jour les documents affectés par un changement réel ; séparer état courant, objectifs futurs et rendu historique. Préserver les informations des autres membres.
-- Maintenir un seul dossier principal : `doc/dossier.md` → `doc/dossier.pdf`. Le PDF R1 doit rester à quatre pages A4. Si sa source change : exécuter `make -C doc`, contrôler la pagination et les liens, et inspecter la mise en page si elle est affectée.
+- Maintenir la documentation commune dans `doc/equipe/`, et chaque contribution dans le dossier du membre concerné sous `doc/membres/`. Le PDF R1 historique doit rester à quatre pages A4. Si sa source change : exécuter `make -C doc equipe`, contrôler la pagination et les liens, et inspecter la mise en page si elle est affectée. Les dossiers de `doc/releases/` sont générés après intégration et ne sont pas édités à la main.
 - Le PDF R1 est un état de lancement ; une tâche de développement ne demande pas automatiquement sa réécriture. Ne pas modifier le tag du rendu pour y intégrer des corrections.
 - Documenter l'usage significatif de l'IA dans la fiche ou la PR : demande, outil, éléments générés, reprises, corrections humaines et vérifications réelles. Ne pas prétendre qu'un étudiant a écrit manuellement un contenu généré.
-- Conserver les dix axes de `doc/part-ia.json`. Séparer objectifs, plafonds et bilan ; préciser le périmètre et la méthode des estimations. Une valeur absente n'est pas 0 %. Ne pas abaisser artificiellement une estimation pour respecter un plafond ni recopier le bilan documentaire dans une feature.
-- Appliquer le protocole [doc/AI_USAGE.md](doc/AI_USAGE.md) et les consignes pédagogiques ; aucune règle de ce fichier n'autorise l'IA pendant une évaluation où elle est interdite.
+- Conserver les dix axes de chaque `doc/membres/<membre>/part-ia.json`. Le bilan collectif R1 reste dans `doc/equipe/part-ia.json`. Séparer objectifs, plafonds et bilan ; préciser le périmètre et la méthode des estimations. Une valeur absente n'est pas 0 %. Ne pas abaisser artificiellement une estimation pour respecter un plafond ni recopier le bilan documentaire dans une feature.
+- Appliquer le protocole [doc/equipe/AI_USAGE.md](doc/equipe/AI_USAGE.md) et les consignes pédagogiques ; aucune règle de ce fichier n'autorise l'IA pendant une évaluation où elle est interdite.
 
 ## Git et actions externes
 
