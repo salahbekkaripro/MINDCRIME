@@ -3,7 +3,7 @@
 - Compte GitHub : [MohamedBoughmadi](https://github.com/MohamedBoughmadi)
 - Domaine : Génération procédurale et backtracking
 - Version en préparation : v0.1.0
-- Statut : implémentation complète des 4 couches réalisée et vérifiée en local sur la branche `mohamed_boughmadi` ; en attente de relecture humaine et de fusion via PR.
+- Statut : implémentation complète des 4 couches réalisée et vérifiée en local sur la branche `mohamed_boughmadi` ; validée par @salahbekkaripro et fusionnée sur main via https://github.com/salahbekkaripro/MINDCRIME/pull/12.
 
 ## Feature portée
 
