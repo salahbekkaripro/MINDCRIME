@@ -1,9 +1,9 @@
-# Contribution D1 — Mohamed BOUGHMADI
+﻿# Contribution D1 — Mohamed BOUGHMADI
 
 - Compte GitHub : [MohamedBoughmadi](https://github.com/MohamedBoughmadi)
 - Domaine : Génération procédurale et backtracking
 - Version en préparation : v0.1.0
-- Statut : implémentation complète des 4 couches réalisée et vérifiée en local sur la branche `mohamed_boughmadi` ; en attente de relecture humaine et de fusion via PR.
+- Statut : implémentation complète des 4 couches réalisée et vérifiée en local sur la branche `mohamed_boughmadi` ; validée par @salahbekkaripro et fusionnée sur main via https://github.com/salahbekkaripro/MINDCRIME/pull/12.
 
 ## Feature portée
 
@@ -38,12 +38,12 @@ La conception complète (modèle Java pur, 6 invariants, structures de données,
 ## Usage de l'IA et validation humaine
 
 Le bilan détaillé de cette contribution se trouve dans [part-ia.json](part-ia.json) et dans la section Bilan de [la fiche F1](features/v0.1.0-F1-enquete-solution-unique.md).  
-Revue humaine : en attente de relecture par un coéquipier sur la Pull Request.
+Revue humaine : validée par @salahbekkaripro sur la Pull Request https://github.com/salahbekkaripro/MINDCRIME/pull/12.
 
 ## Références de livraison
 
 - Issue : #11 (`[D1][v0.1.0] F1 — Enquête à solution unique`)
 - Branche : `mohamed_boughmadi`
-- Pull request : à renseigner après ouverture sur GitHub
+- Pull request : https://github.com/salahbekkaripro/MINDCRIME/pull/12
 - Commits principaux : `be4f7e0` (conception), `dcc52db` (moteur pur + JUnit/ArchUnit), `e907b19` (persistance Flyway/JPA + API REST v1), complétés par le frontend React et la documentation bilan.
 - Limites et prochaine étape : faire relire la conception et la PR par un coéquipier, coordonner la numérotation de la migration Flyway (`V1__d1_enquetes.sql`) avec le socle commun sur `main`, puis préparer `D1-B` (v0.2.0 : difficulté et budget d'indices paramétrables).
